@@ -1,0 +1,3060 @@
+<!DOCTYPE html>
+<html data-cast-api-enabled="true" lang="en"><head><style name="www-roboto">@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto Regular'),local('Roboto-Regular'),url(//fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(//fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc3CsTKlA.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc-CsTKlA.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc2CsTKlA.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc5CsTKlA.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc1CsTKlA.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc0CsTKlA.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(//fonts.gstatic.com/s/roboto/v18/KFOjCnqEu92Fr1Mu51S7ACc6CsQ.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xFIzIFKw.woff2)format('woff2');unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xMIzIFKw.woff2)format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xEIzIFKw.woff2)format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xLIzIFKw.woff2)format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xHIzIFKw.woff2)format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xGIzIFKw.woff2)format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}@font-face{font-family:'Roboto';font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(//fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1Mu51xIIzI.woff2)format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}</style><script name="www-roboto">if (document.fonts && document.fonts.load) {document.fonts.load("400 10pt Roboto", "E");document.fonts.load("500 10pt Roboto", "E");}</script><script>var ytcsi = {gt: function(n) {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n] = {tick: {},info: {}});},now: window.performance && window.performance.timing &&window.performance.now ? function() {return window.performance.timing.navigationStart + window.performance.now();} : function() {return (new Date()).getTime();},tick: function(l, t, n) {ticks = ytcsi.gt(n).tick;var v = t || ytcsi.now();if (ticks[l]) {ticks['_' + l] = (ticks['_' + l] || [ticks[l]]);ticks['_' + l].push(v);}ticks[l] = v;},info: function(k, v, n) {ytcsi.gt(n).info[k] = v;},setStart: function(s, t, n) {ytcsi.info('yt_sts', s, n);ytcsi.tick('_start', t, n);}};(function(w, d) {ytcsi.setStart('dhs', w.performance ? w.performance.timing.responseStart : null);var isPrerender = (d.visibilityState || d.webkitVisibilityState) == 'prerender';var vName = (!d.visibilityState && d.webkitVisibilityState)? 'webkitvisibilitychange' : 'visibilitychange';if (isPrerender) {ytcsi.info('prerender', 1);var startTick = function() {ytcsi.setStart('dhs');d.removeEventListener(vName, startTick);};d.addEventListener(vName, startTick, false);}if (d.addEventListener) {d.addEventListener(vName, function() {ytcsi.tick('vc');}, false);}var slt = function(el, t) {setTimeout(function() {var n = ytcsi.now();el.loadTime = n;if (el.slt) {el.slt();}}, t);};w.__ytRIL = function(el) {if (!el.getAttribute('data-thumb')) {if (w.requestAnimationFrame) {w.requestAnimationFrame(function() {slt(el, 0);});} else {slt(el, 16);}}};})(window, document);</script><script>var ytcfg = {d: function() {return (window.yt && yt.config_) || ytcfg.data_ || (ytcfg.data_ = {});},get: function(k, o) {return (k in ytcfg.d()) ? ytcfg.d()[k] : o;},set: function() {var a = arguments;if (a.length > 1) {ytcfg.d()[a[0]] = a[1];} else {for (var k in a[0]) {ytcfg.d()[k] = a[0][k];}}}};</script>  <script>ytcfg.set("EVENT_ID", "_-cDXdqdKJq9igSQsan4Cg");</script>
+  
+  
+
+
+
+
+  <script>
+        (function(){var a={a:"content-snap-width-1",b:"content-snap-width-2",f:"content-snap-width-3"};function f(){var c=[],b;for(b in a)c.push(a[b]);return c}
+function h(c){var b=f().concat(["guide-pinned","show-guide"]),d=b.length,g=[];c.replace(/\S+/g,function(e){for(var k=0;k<d;k++)if(e==b[k])return;g.push(e)});
+return g}
+;function l(c,b,d){var g=document.getElementsByTagName("html")[0],e=h(g.className);c&&1251<=(window.innerWidth||document.documentElement.clientWidth)&&(e.push("guide-pinned"),b&&e.push("show-guide"));d&&(d=(window.innerWidth||document.documentElement.clientWidth)-21-50,1251<=(window.innerWidth||document.documentElement.clientWidth)&&c&&b&&(d-=230),e.push(1262<=d?"content-snap-width-3":1056<=d?"content-snap-width-2":"content-snap-width-1"));g.className=e.join(" ")}
+var m=["yt","www","masthead","sizing","runBeforeBodyIsReady"],n=this||self;m[0]in n||"undefined"==typeof n.execScript||n.execScript("var "+m[0]);for(var p;m.length&&(p=m.shift());)m.length||void 0===l?n[p]&&n[p]!==Object.prototype[p]?n=n[p]:n=n[p]={}:n[p]=l;}).call(this);
+
+      try {window.ytbuffer = {};ytbuffer.handleClick = function(e) {var element = e.target || e.srcElement;while (element.parentElement) {if (/(^| )yt-can-buffer( |$)/.test(element.className)) {window.ytbuffer = {bufferedClick: e};element.className += ' yt-is-buffered';break;}element = element.parentElement;}};if (document.addEventListener) {document.addEventListener('click', ytbuffer.handleClick);} else {document.attachEvent('onclick', ytbuffer.handleClick);}} catch(e) {}
+
+    yt.www.masthead.sizing.runBeforeBodyIsReady(false,true,false);
+  </script>
+
+      <script type="text/javascript" name="scheduler/scheduler" src="//s.ytimg.com/yts/jsbin/scheduler-vfl0nTPXR/scheduler.js"></script>
+
+
+  
+  <link rel="stylesheet" name="www-core" href="//s.ytimg.com/yts/cssbin/www-core-webp-vflz1D1N7.css">
+      <link rel="stylesheet" name="player/www-player" href="//s.ytimg.com/yts/cssbin/player-vfln-LC-T/www-player-webp.css">
+
+  <link rel="stylesheet" name="www-pageframe" href="//s.ytimg.com/yts/cssbin/www-pageframe-webp-vflO2nkM9.css">
+
+    
+<title>Comments
+ - YouTube</title><meta name="description" content="Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."><meta name="keywords" content="video, sharing, camera phone, video phone, free, upload">   <link rel="manifest" href="/creator_manifest.json">
+      <meta name="referrer" content="origin-when-cross-origin">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.youtube.com/opensearch?locale=en_US" title="YouTube Video Search"><link rel="shortcut icon" href="https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico" type="image/x-icon">     <link rel="icon" sizes="32x32" href="//s.ytimg.com/yts/img/favicon_32-vflOogEID.png"><link rel="icon" sizes="48x48" href="//s.ytimg.com/yts/img/favicon_48-vflVjB_Qk.png"><link rel="icon" sizes="96x96" href="//s.ytimg.com/yts/img/favicon_96-vflW9Ec0w.png"><link rel="icon" sizes="144x144" href="//s.ytimg.com/yts/img/favicon_144-vfliLAfaB.png"><meta name="theme-color" content="#ff0000">    <link rel="stylesheet" name="www-creatorpage" href="//s.ytimg.com/yts/cssbin/www-creatorpage-webp-vflSjs0Ja.css">
+    <link rel="stylesheet" name="www-commenthub" href="//s.ytimg.com/yts/cssbin/www-commenthub-webp-vflQiDywD.css">
+
+
+<style>.exp-invert-logo .hats-logo {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/logo_mini_gray-vflfanGkh.png);width: 65px;height: 15px;}.exp-invert-logo #header:before,.exp-invert-logo .ypc-join-family-header .logo,.exp-invert-logo #footer-logo .footer-logo-icon,.exp-invert-logo #yt-masthead #logo-container .logo,.exp-invert-logo #masthead #logo-container,.exp-invert-logo .admin-masthead-logo a,.exp-invert-logo #yt-sidebar-styleguide-logo #logo {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/logo_small-vflHpzGZm.png);width: 100px;height: 30px;}.exp-invert-logo.inverted-hdpi #header:before,.exp-invert-logo.inverted-hdpi .ypc-join-family-header .logo,.exp-invert-logo.inverted-hdpi #footer-logo .footer-logo-icon,.exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo,.exp-invert-logo.inverted-hdpi #masthead #logo-container,.exp-invert-logo.inverted-hdpi .admin-masthead-logo a,.exp-invert-logo.inverted-hdpi #yt-sidebar-styleguide-logo #logo {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png);background-size: 100px 30px;width: 100px;height: 30px;}.exp-invert-logo.exp-fusion-nav-redesign .masthead-logo-renderer-logo {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/yt_play_logo-vflLfk4yD.png);width: 40px;height: 28px;}.exp-invert-logo.inverted-hdpi.exp-fusion-nav-redesign .masthead-logo-renderer-logo {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/yt_play_logo_2x-vflXx5Pg3.png);width: 40px;height: 28px;}@media screen and (max-width: 656px) {.exp-invert-logo #yt-masthead #logo-container .logo {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/yt_play_logo-vflLfk4yD.png);width: 40px;height: 28px;}.exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/yt_play_logo_2x-vflXx5Pg3.png);background-size: 40px 28px;width: 40px;height: 28px;}}@media only screen and (min-width: 0px) and (max-width: 498px),only screen and (min-width: 499px) and (max-width: 704px) {.exp-invert-logo.exp-responsive #yt-masthead #logo-container {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/yt_play_logo-vflLfk4yD.png);width: 40px;height: 28px;}.exp-invert-logo.inverted-hdpi.exp-responsive #yt-masthead #logo-container {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/yt_play_logo_2x-vflXx5Pg3.png);background-size: 40px 28px;width: 40px;height: 28px;}}.exp-invert-logo #yt-masthead #logo-container .logo-red {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/logo_youtube_red-vflZxcSR1.png);width: 132px;height: 30px;}.exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo-red {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/logo_youtube_red_2x-vflOSHA_n.png);background-size: 132px 30px;width: 132px;height: 30px;}.exp-invert-logo #yt-masthead #logo-container .logo-premium {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/logo_youtube_premium-vfltrvziB.png);width: 108px;height: 30px;}.exp-invert-logo.inverted-hdpi #yt-masthead #logo-container .logo-premium {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/logo_youtube_premium_2x-vflxcbz_g.png);background-size: 108px 30px;width: 108px;height: 30px;}.exp-invert-logo .guide-item .guide-video-youtube-red-icon {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/video_youtube_red-vflovGTdz.png);width: 20px;height: 20px;}.exp-invert-logo.inverted-hdpi .guide-item .guide-video-youtube-red-icon {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/video_youtube_red_2x-vflqMdgEM.png);background-size: 20px 20px;width: 20px;height: 20px;}.exp-invert-logo .guide-item:hover .guide-video-youtube-red-icon,.exp-invert-logo .guide-item.guide-item-selected .guide-video-youtube-red-icon {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/video_youtube_red_hover-vflgV4Gv0.png);width: 20px;height: 20px;}.exp-invert-logo.inverted-hdpi .guide-item:hover .guide-video-youtube-red-icon,.exp-invert-logo.inverted-hdpi .guide-item.guide-item-selected .guide-video-youtube-red-icon {background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/video_youtube_red_hover_2x-vflYjZHvf.png);background-size: 20px 20px;width: 20px;height: 20px;}.exp-invert-logo li.guide-section h3,.exp-invert-logo li.guide-section h3 a {color: #f00;}.exp-invert-logo a.yt-uix-button-epic-nav-item:hover,.exp-invert-logo a.yt-uix-button-epic-nav-item.selected,.exp-invert-logo a.yt-uix-button-epic-nav-item.yt-uix-button-toggled,.exp-invert-logo a.yt-uix-button-epic-nav-item.partially-selected,.exp-invert-logo a.yt-uix-button-epic-nav-item.partially-selected:hover,.exp-invert-logo button.yt-uix-button-epic-nav-item:hover,.exp-invert-logo button.yt-uix-button-epic-nav-item.selected,.exp-invert-logo button.yt-uix-button-epic-nav-item.yt-uix-button-toggled,.exp-invert-logo .epic-nav-item:hover,.exp-invert-logo .epic-nav-item.selected,.exp-invert-logo .epic-nav-item.yt-uix-button-toggled,.exp-invert-logo .epic-nav-item-heading,.exp-invert-logo .yt-gb-shelf-item-thumbtab.yt-gb-selected-shelf-tab::before {border-color: #f00;}.exp-invert-logo .resume-playback-progress-bar,.exp-invert-logo .yt-uix-button-subscribe-branded,.exp-invert-logo .yt-uix-button-subscribe-branded[disabled],.exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:hover,.exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:active,.exp-invert-logo .yt-uix-button-subscribe-branded[disabled]:focus,.exp-invert-logo .sb-notif-on .yt-uix-button-content,.exp-invert-logo .guide-item.guide-item-selected,.exp-invert-logo .guide-item.guide-item-selected:hover,.exp-invert-logo .guide-item.guide-item-selected .yt-deemphasized-text,.exp-invert-logo .guide-item.guide-item-selected:hover .yt-deemphasized-text {background-color: #f00;}.exp-invert-logo .yt-uix-button-subscribe-branded:hover {background-color: #d90a17;}.exp-invert-logo .yt-uix-button-subscribe-branded.yt-is-buffered,.exp-invert-logo .yt-uix-button-subscribe-branded:active,.exp-invert-logo .yt-uix-button-subscribe-branded.yt-uix-button-toggled,.exp-invert-logo .yt-uix-button-subscribe-branded.yt-uix-button-active,.exp-invert-logo .yt-uix-button-subscribed-branded.external,.exp-invert-logo .yt-uix-button-subscribed-branded.external[disabled],.exp-invert-logo .yt-uix-button-subscribed-branded.external:active,.exp-invert-logo .yt-uix-button-subscribed-branded.external.yt-uix-button-toggled,.exp-invert-logo .yt-uix-button-subscribed-branded.external.yt-uix-button-active {background-color: #a60812;}</style><style>.exp-invert-logo #header:before, .exp-invert-logo .ypc-join-family-header .logo, .exp-invert-logo #footer-logo .footer-logo-icon, .exp-invert-logo #yt-masthead #logo-container .logo, .exp-invert-logo #masthead #logo-container, .exp-invert-logo .admin-masthead-logo a, .exp-invert-logo #yt-sidebar-styleguide-logo #logo { background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png); background-size: 100px 30px; } .exp-invert-logo #yt-masthead #logo-container .logo-red { background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/logo_youtube_red_2x-vflOSHA_n.png); background-size: 132px 30px; } @media only screen and (min-width: 0px) and (max-width: 498px), only screen and (min-width: 499px) and (max-width: 704px) { .exp-invert-logo.exp-responsive #yt-masthead #logo-container { background: no-repeat url(//s.ytimg.com/yts/img/ringo/hitchhiker/yt_play_logo_2x-vflXx5Pg3.png); background-size: 40px 28px; } } .guide-sort-container {display: none}</style></head>
+
+      <body dir="ltr" id="body" data-spf-name="other" class="  visibility-logging-enabled  ltr  webkit webkit-537  exp-invert-logo exp-kevlar-settings exp-mouseover-img exp-responsive exp-search-big-thumbs   site-center-aligned site-as-giant-card always-autohide-masthead appbar-hidden   not-nirvana-dogfood    flex-width-enabled    delayed-frame-styles-not-in    yt-user-logged-in  ">
+
+  <div id="early-body"></div>
+  <div id="body-container"><div id="a11y-announcements-container" role="alert"><div id="a11y-announcements-message"></div></div><form name="logoutForm" method="POST" action="/logout"><input type="hidden" name="action_logout" value="1"></form><div id="masthead-positioner">      <div id="ticker-content">
+        
+
+  </div>
+  <div id="yt-masthead-container" class="clearfix yt-base-gutter">  <button id="a11y-skip-nav" class="skip-nav" data-target-id="main" tabindex="3">
+Skip navigation
+  </button>
+<div id="yt-masthead"><div class="yt-masthead-logo-container ">  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-text yt-uix-button-empty yt-uix-button-has-icon appbar-guide-toggle appbar-guide-clickable-ancestor" type="button" onclick=";return false;" aria-controls="appbar-guide-menu" id="appbar-guide-button" aria-label="Guide"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-appbar-guide yt-sprite"></span></span></button>
+  <div id="appbar-main-guide-notification-container"></div>
+    <a id="logo-container" href="/" title="YouTube home" class=" spf-link  masthead-logo-renderer yt-uix-sessionlink" data-sessionlink=""><span title="YouTube home" class="logo masthead-logo-renderer-logo yt-sprite"></span><span class="content-region">PH</span></a>
+</div><div id="yt-masthead-user" class="yt-uix-clickcard">    <div id="yt-masthead-creation-menu" class="yt-uix-clickcard" data-card-class="yt-scrollbar yt-masthead-creation-clickcard"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup yt-uix-clickcard-target" type="button" onclick=";return false;" aria-haspopup="true" id="yt-masthead-creation-button" aria-label="Create a video or post" data-orientation="vertical" data-position-fixed="true" data-position="bottomleft" data-force-position="true"></button><div id="yt-masthead-creation-clickcard" class="yt-uix-clickcard-content"><div class="yt-masthead-creation-upload"><a href="/upload" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg" id="creation-upload-menu-item"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-creation-upload yt-sprite"></span></span><span class="yt-uix-button-content">Upload video</span></a></div><div class="yt-masthead-creation-live"><a href="/livestreaming/" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg" id="creation-live-menu-item"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-creation-live yt-sprite"></span></span><span class="yt-uix-button-content">Go live</span></a></div></div></div>
+    <span id="yt-masthead-notifications" class="yt-uix-clickcard " data-card-action="yt.www.notifications.inbox.handleNotificationsClick" data-card-class="yt-scrollbar yt-notification-inbox-clickcard"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-clickcard-target sb-notif-off" type="button" onclick=";return false;" aria-haspopup="true" id="yt-masthead-notifications-button" aria-label="Notifications" data-orientation="vertical" data-position-fixed="true" data-position="bottomleft" data-force-position="true"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-bell yt-sprite"></span></span><span class="yt-uix-button-content">‌</span></button><div id="yt-masthead-notifications-clickcard" class="yt-uix-clickcard-content"><div id="yt-masthead-high-priority-notification-content"></div><div id="yt-masthead-notifications-header"><span id="yt-masthead-notifications-title" role="heading">Notifications</span><a href="/account_notifications" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-opacity yt-uix-button-size-default yt-uix-button-has-icon yt-uix-button-empty" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg" id="yt-masthead-notifications-settings" aria-label="Settings"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-icon-account-settings yt-sprite"></span></span></a></div><div id="yt-masthead-notifications-content" class="yt-uix-scroller"></div></div></span>
+    <span id="yt-masthead-account-picker" class="yt-uix-clickcard" data-card-action="yt.www.masthead.handleAccountPickerClick" data-card-class="yt-masthead-account-picker-card">
+    <button class="yt-uix-button yt-uix-button-size-default yt-masthead-user-icon yt-uix-clickcard-target" type="button" onclick=";return false;" aria-haspopup="true" aria-label="Account profile photo that opens list of alternate accounts" data-orientation="vertical" data-position-fixed="true" data-position="bottomleft" data-force-position="true"><span class="yt-uix-button-content">  <span class="video-thumb  yt-thumb yt-thumb-27">
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img data-ytimg="1" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" aria-hidden="true" alt="" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png" width="27" height="27">
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+</span></button>
+
+      <div class="yt-masthead-account-picker yt-uix-clickcard-content">
+
+
+
+    <a class="yt-masthead-picker-header yt-masthead-picker-active-account" href="https://myaccount.google.com/u/0">
+      kirasicecreamm@gmail.com
+    </a>
+
+    <div id="yt-unlimited-member"></div>
+
+    <div class="yt-masthead-picker-body">
+        <a class="yt-masthead-picker-photo-wrapper" href="https://aboutme.google.com/u/0#profile_photo">  <span class="video-thumb  yt-thumb yt-thumb-64">
+    <span class="yt-thumb-square">
+      <span class="yt-thumb-clip">
+        
+  <img data-ytimg="1" onload=";window.__ytRIL &amp;&amp; __ytRIL(this)" aria-hidden="true" alt="" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png" width="64" height="64">
+
+        <span class="vertical-align"></span>
+      </span>
+    </span>
+  </span>
+<span class="yt-masthead-picker-photo-change">Change</span></a><div class="yt-masthead-picker-info"><div class="yt-masthead-picker-name" dir="ltr">Taniko Yamamoto</div><div class="yt-masthead-picker-account-subtitle" id="yt-subscriber-count">Walter White</div><a href="/dashboard?o=U" class="yt-uix-button  yt-masthead-picker-button yt-masthead-picker-button-primary yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg"><span class="yt-uix-button-content">Creator Studio</span></a><a href="/account" class="yt-uix-button  yt-masthead-picker-button yt-masthead-picker-settings-button yt-uix-tooltip yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg" title="YouTube settings"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-icon-account-settings yt-sprite"></span></span></a></div>
+    </div>
+
+        <div id="yt-masthead-multilogin" class="yt-masthead-multilogin-users">
+      <div id="yt-delegate-accounts"></div>
+
+    </div>
+
+
+    <div id="yt-channel-switcher-link" class="clearfix"></div>
+
+    <div class="yt-masthead-picker-footer clearfix">
+          <a href="https://accounts.google.com/AddSession?service=youtube&amp;passive=false&amp;uilel=0&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252Fsubscribers%26hl%3Den%26app%3Ddesktop%26action_handle_signin%3Dtrue&amp;hl=en" class="yt-uix-button  yt-masthead-picker-button yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg"><span class="yt-uix-button-content">Add account</span></a>
+
+  <a href="/logout" class="yt-uix-button  yt-masthead-picker-button yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg"><span class="yt-uix-button-content">Sign out</span></a>
+
+    </div>
+  </div>
+
+  </span>
+
+</div><div id="yt-masthead-content"><form id="masthead-search" class="  search-form consolidated-form  vve-check" action="/results" onsubmit="if (document.getElementById('masthead-search-term').value == '') return false;" data-clicktracking="" data-visibility-tracking=""><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default search-btn-component search-button" type="submit" onclick="if (document.getElementById('masthead-search-term').value == '') return false; document.getElementById('masthead-search').submit(); return false;;return true;" id="search-btn" tabindex="2" dir="ltr"><span class="yt-uix-button-content">Search</span></button><div id="masthead-search-terms" class="masthead-search-terms-border" dir="ltr"><input id="masthead-search-term" autocomplete="off" onkeydown="if (!this.value &amp;&amp; (event.keyCode == 40 || event.keyCode == 32 || event.keyCode == 34)) {this.onkeydown = null; this.blur();}" class="search-term masthead-search-renderer-input yt-uix-form-input-bidi" name="search_query" value="" type="text" tabindex="1" placeholder="Search" title="Search" aria-label="Search"></div></form></div></div></div>
+    <div id="masthead-appbar-container" class="clearfix"><div id="masthead-appbar"><div id="appbar-content" class="">  
+</div></div></div>
+
+
+</div><div id="masthead-positioner-height-offset"></div><div id="page-container"><div id="page" class=" clearfix"><div id="guide" class="yt-scrollbar">      <div id="appbar-guide-menu" class="appbar-menu appbar-guide-menu-layout appbar-guide-clickable-ancestor">
+    <div id="guide-container">
+      <div class="guide-module-content guide-module-loading">
+          <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+      </div>
+    </div>
+  </div>
+
+</div><div class="alerts-wrapper"><div id="alerts" class="content-alignment">  
+</div></div><div id="header"></div><div id="player" class="  off-screen  " role="complementary"><div id="theater-background" class="player-height"></div>  <div id="player-mole-container">
+    <div id="player-unavailable" class="  hid  ">
+      
+    </div>
+
+    <div id="player-api" class="player-width player-height off-screen-target player-api" tabindex="-1"></div>
+    
+
+    <div id="watch-queue-mole" class="video-mole mole-collapsed hid"><div id="watch-queue" class="watch-playlist player-height"><div class="main-content"><div class="watch-queue-header"><div class="watch-queue-info"><div class="watch-queue-info-icon"><span class="tv-queue-list-icon yt-sprite"></span></div><h3 class="watch-queue-title">Watch Queue</h3><h3 class="tv-queue-title">Queue</h3><span class="tv-queue-details">by <span class="yt-user-name " dir="ltr">Mainly Jaz</span></span></div><div class="watch-queue-control-bar control-bar-button"><div class="watch-queue-mole-info"><div class="watch-queue-control-bar-icon"><span class="watch-queue-icon yt-sprite"></span></div><div class="watch-queue-title-container"><span class="watch-queue-count"></span><span class="watch-queue-title">Watch Queue</span><span class="tv-queue-title">Queue</span></div></div>  <span id="watch-queue-save-as-playlist-widget" class="create-playlist-widget-button yt-uix-clickcard" data-click-outside-persists="true" data-dialog-id="watch-queue-save-as-playlist-dialog">
+      <div id="watch-queue-save-as-playlist-dialog" class="create-playlist-widget-dialog hid yt-uix-clickcard-content">
+          <form class="create-playlist-widget-form yt-uix-focustrap" method="POST" action="/playlist_ajax?action_create_playlist=1" data-max-title-length="150">
+    <input class="video-ids-input" type="hidden" name="video_ids">
+    <input class="source-playlist-id-input" type="hidden" name="source_playlist_id">
+    <div class="create-playlist-section">
+      <label>
+        <h2 class="yt-uix-form-label">
+Playlist title
+        </h2>
+        <span class="title-input-container yt-uix-form-input-container yt-uix-form-input-text-container  yt-uix-form-input-fluid-container"><span class=" yt-uix-form-input-fluid"><input class="yt-uix-form-input-text title-input" name="n" type="text" maxlength="150"></span></span>
+      </label>
+    </div>
+
+    <div class="create-playlist-section create-playlist-bottom-section clearfix">
+        <input class="privacy-value-input" type="hidden" name="p" value="public">
+  <div class="yt-uix-menu yt-uix-menu-sibling-content privacy-button-container">  <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-text yt-uix-button-has-icon no-icon-markup privacy-button yt-uix-menu-trigger" type="button" onclick=";return false;" aria-pressed="false" role="button" aria-haspopup="true" aria-label="Playlist privacy" data-privacy-state="privacy-public"><span class="yt-uix-button-content">Public</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+<div class="yt-uix-menu-content yt-ui-menu-content yt-uix-menu-content-hidden" role="menu">  <ul class="create-playlist-widget-privacy-menu">
+      <li role="menuitem">
+      <button type="button" title="Public" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select yt-uix-button-has-icon no-icon-markup is-selected" data-value="public" data-privacy-state="privacy-public">
+    <span class="yt-ui-menu-item-label">Public</span>
+  </button>
+
+  </li>
+
+
+      <li role="menuitem">
+      <button type="button" title="Unlisted" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select yt-uix-button-has-icon no-icon-markup" data-value="unlisted" data-privacy-state="privacy-unlisted">
+    <span class="yt-ui-menu-item-label">Unlisted</span>
+  </button>
+
+  </li>
+
+
+      <li role="menuitem">
+      <button type="button" title="Private" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select yt-uix-button-has-icon no-icon-markup" data-value="private" data-privacy-state="privacy-private">
+    <span class="yt-ui-menu-item-label">Private</span>
+  </button>
+
+  </li>
+
+  </ul>
+</div></div>
+
+        <div class="create-playlist-buttons">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default cancel-button" type="reset" onclick=";return true;"><span class="yt-uix-button-content">Cancel</span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary create-button" type="submit" onclick=";return true;" disabled="True"><span class="yt-uix-button-content">Create</span></button>
+    <button class="yt-uix-button-disabled-aria-label" aria-disabled="true" onclick="return false;">Create</button>
+  </div>
+
+    </div>
+    <div class="yt-uix-focustrap-trap" tabindex="0"></div>
+  </form>
+
+      </div>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon no-icon-markup yt-uix-clickcard-target add-new-pl-btn" type="button" onclick=";return false;" data-orientation="vertical" data-position="bottomright"><span class="yt-uix-button-content">New playlist</span></button>
+  </span>
+  <span class="dark-overflow-action-menu">
+      
+    
+    
+    <button class="flip control-bar-button yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty" type="button" aria-haspopup="true" aria-expanded="false" onclick=";return false;" aria-label="Actions for the queue"><span class="yt-uix-button-arrow yt-sprite"></span><ul class="watch-queue-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid" role="menu" aria-haspopup="true"><li role="menuitem"><span onclick=";return false;" class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="save-as-playlist">Save as playlist</span></li><li role="menuitem"><span onclick=";return false;" class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="remove-all">Remove all</span></li><li role="menuitem"><span onclick=";return false;" class="watch-queue-menu-choice overflow-menu-choice yt-uix-button-menu-item" data-action="disconnect">Disconnect</span></li></ul></button>
+  </span>
+  <div class="watch-queue-controls">
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button prev-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="Previous video"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-prev yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button play-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="Play"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-play yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button pause-watch-queue-button yt-uix-button-opacity yt-uix-tooltip hid yt-uix-tooltip" type="button" onclick=";return false;" title="Pause"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-pause yt-sprite"></span></span></button>
+
+    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-empty yt-uix-button-has-icon control-bar-button next-watch-queue-button yt-uix-button-opacity yt-uix-tooltip yt-uix-tooltip" type="button" onclick=";return false;" title="Next video"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-watch-queue-next yt-sprite"></span></span></button>
+  </div>
+</div><div class="autoplay-dismiss-bar fade-out"><span class="autoplay-dismiss-title-label">The next video is starting</span><span><button class="yt-uix-button yt-uix-button-size-default autoplay-dismiss-button yt-uix-tooltip" type="button" onclick=";return false;" title="stop"><span class="yt-uix-button-content">stop</span></button></span></div></div><div class="watch-queue-items-container yt-scrollbar-dark yt-scrollbar"><div class="yt-uix-scroller playlist-videos-list"><ol class="watch-queue-items-list" data-scroll-action="yt.www.watchqueue.loadThumbnails">  <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+</ol><div class="autoplay-control-container yt-uix-scroller-scroll-unit hid">  <div class="autoplay-control-bar">
+    <label class="autoplay-label" for="autoplay-toggle-id"></label>
+    <label class="yt-uix-form-input-checkbox-container yt-uix-form-input-container yt-uix-form-input-paper-toggle-container  "><input class="yt-uix-form-input-checkbox" type="checkbox" id="autoplay-toggle-id"><div class="yt-uix-form-input-paper-toggle-bg yt-uix-form-input-paper-toggle-bar"></div><div class="yt-uix-form-input-paper-toggle-bg yt-uix-form-input-paper-toggle-button"></div></label>
+  </div>
+</div><div class="up-next-item-container hid"></div></div></div></div>  <div class="hid">
+    <div id="watch-queue-title-msg">
+Watch Queue
+    </div>
+
+    <div id="tv-queue-title-msg">Queue</div>
+
+    <div id="watch-queue-count-msg">
+__count__/__total__
+    </div>
+
+    <div id="watch-queue-loading-template">
+      <!--
+          <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+      -->
+    </div>
+  </div>
+</div></div>
+
+    <div id="player-playlist" class="  hid  ">
+      
+    </div>
+
+  </div>
+
+  <div class="clear"></div>
+</div><div id="content" class="  content-alignment" role="main">  <div id="creator-page" class="clearfix"><div id="creator-page-sidebar" class="yt-card"><ul id="creator-sidebar"><li class="hid"><ul class="creator-sidebar-templates"><li id="creator-sidebar-section-id-" class="creator-sidebar-section creator-sidebar-single-section"><h3 class="creator-sidebar-section-header"><a href="" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"></a><span class="creator-sidebar-section-header-text"></span></h3></li><li><ul class="creator-sidebar-submenu"></ul></li><li class="creator-sidebar-item"><a class="creator-sidebar-item-link yt-uix-sessionlink" href="#" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="creator-sidebar-item-content"></span></a></li><li><span class="yt-badge yt-badge-creator"></span></li></ul></li>  <li class="creator-sidebar-branding">
+    <h1>
+      Creator Studio
+    </h1>
+
+  </li>
+<li id="creator-sidebar-section-id-dashboard" class="creator-sidebar-section creator-sidebar-single-section"><h3><a href="/dashboard?o=U&amp;ar=3" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="studio-icon creator-sidebar-dashboard yt-sprite"></span><span class="header-text">Dashboard</span><span class="creator-sidebar-bullet yt-sprite"></span></a></h3></li><li id="creator-sidebar-section-id-video-manager" class="creator-sidebar-section"><h3><a href="/my_videos?o=U&amp;ar=3" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="studio-icon creator-sidebar-video-manager yt-sprite"></span><span class="header-text">Video Manager</span><span class="creator-sidebar-bullet yt-sprite"></span></a></h3></li><li id="creator-sidebar-section-id-live-streaming" class="creator-sidebar-section"><h3><a href="/live_dashboard?o=U&amp;ar=3" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="studio-icon creator-sidebar-live-streaming yt-sprite"></span><span class="header-text">Live Streaming</span><span class="creator-sidebar-bullet yt-sprite"></span></a></h3></li><li id="creator-sidebar-section-id-community" class="creator-sidebar-section selected"><h3><a href="/comments?o=U&amp;ar=3" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="studio-icon creator-sidebar-community selected yt-sprite"></span><span class="header-text">Community</span></a></h3><ul class="creator-sidebar-submenu"><li class="creator-sidebar-item selected"><a class="creator-sidebar-item-link yt-uix-sessionlink" href="/comments?o=U&amp;ar=3" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="creator-sidebar-item-content">Comments</span></a></li><li class="creator-sidebar-item"><a class="creator-sidebar-item-link yt-uix-sessionlink" href="/subscribers?o=U&amp;ar=3" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="creator-sidebar-item-content">Subscribers</span></a></li><li class="creator-sidebar-item"><a class="creator-sidebar-item-link yt-uix-sessionlink" href="/comment_management?o=U&amp;ar=3" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="creator-sidebar-item-content">Community settings</span></a></li></ul></li><li id="creator-sidebar-section-id-channel" class="creator-sidebar-section"><h3><a href="/features?o=U&amp;ar=3" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="studio-icon creator-sidebar-channel yt-sprite"></span><span class="header-text">Channel</span><span class="creator-sidebar-bullet yt-sprite"></span></a></h3></li><li id="creator-sidebar-section-id-analytics" class="creator-sidebar-section"><h3><a href="/analytics?o=U&amp;ar=3" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="studio-icon creator-sidebar-analytics yt-sprite"></span><span class="header-text">Analytics</span><span class="creator-sidebar-bullet yt-sprite"></span></a></h3></li><li id="creator-sidebar-section-id-translations-and-transcriptions" class="creator-sidebar-section"><h3><a href="/timedtext_cs_queue?o=U&amp;ar=3" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="studio-icon creator-sidebar-translations-and-transcriptions yt-sprite"></span><span class="header-text">Translations &amp; Transcriptions</span><span class="creator-sidebar-bullet yt-sprite"></span></a></h3></li><li id="creator-sidebar-section-id-create" class="creator-sidebar-section"><h3><a href="/audiolibrary/music?o=U&amp;ar=3" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="studio-icon creator-sidebar-create yt-sprite"></span><span class="header-text">Create</span><span class="creator-sidebar-bullet yt-sprite"></span></a></h3></li><li id="creator-sidebar-separator"></li><li id="creator-sidebar-section-id-your-contributions" class="creator-sidebar-section creator-sidebar-single-section"><h3><a href="/timedtext_cs_panel?o=U&amp;ar=3" class="creator-sidebar-section-link yt-uix-sessionlink" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg&amp;feature=ctsb"><span class="studio-icon creator-sidebar-your-contributions yt-sprite"></span><span class="header-text">Your Contributions</span><span class="creator-sidebar-bullet yt-sprite"></span></a></h3></li><li class="creator-sidebar-feedback"><button class="yt-uix-button yt-uix-button-size-default yt-uix-button-dark" type="button" onclick="return yt.www.feedback.startHelp(event.currentTarget, 59, yt.getConfig('GOOGLE_HELP_CONTEXT'), {&quot;segment&quot;:6});;return false;"><span class="yt-uix-button-content">Help and feedback</span></button></li></ul></div>    
+<div id="creator-page-content" class="yt-card"><div class="tabbed-page">  <div id="creator-subheader" class="clearfix">
+    <div class="creator-subheader-content" data-ng-non-bindable="">
+      <h2 id="creator-subheader-text">Comments</h2>
+    </div>
+</div><div class="tabs-area">
+    <div class="tabs-wrapper">
+      <div class="tabs-container">
+
+            <a class="tab active spf-link" href="/comments?filter=all&amp;highlights=False&amp;tab=inbox">
+    <span class="content">
+        <span class="title">Published comments</span>
+      </span>
+  </a>
+
+
+            <a class="tab  spf-link" href="/comments?filter=all&amp;highlights=False&amp;tab=moderate">
+    <span class="content">
+        <span class="title">Held for review</span><span class="count">7</span>
+      </span>
+  </a><a class="tab  spf-link" href="/comments?filter=all&amp;highlights=False&amp;tab=spam">
+    <span class="content">
+        <span class="title">Likely spam</span><span class="count">8</span>
+      </span>
+  </a>
+
+      </div>
+    </div>
+  </div>
+      
+
+<div class="commenthub"><style>.commenthub .mod-list-button{min-width:0}</style><a class="yt-uix-button yt-uix-button-default settings-link" href="/comment_management?o=U"><span class="yt-uix-button-icon yt-uix-button-icon-settings yt-sprite"></span></a><div class="options-bar"><div class="ytch-search-container"><form data-clicktracking="" data-visibility-tracking="" action="/comments" class=" vve-check"><input type="hidden" name="tab" value="inbox"><input type="hidden" name="filter" value="all"><input autocomplete="off" onkeydown="if (!this.value &amp;&amp; (event.keyCode == 40 || event.keyCode == 32 || event.keyCode == 34)) {this.onkeydown = null; this.blur();}" value="" type="text" tabindex="1" aria-label="Search comments" title="Search comments" placeholder="Search comments" name="search_terms" class="comment-search search-terms  yt-uix-form-input-text" id="ytch-search-term"><div class="yt-uix-button-group search-btn-component search-button"><div class="start"><button type="submit" dir="ltr" tabindex="2" id="comments-search-btn" class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" onclick="if (document.getElementById('ytch-search-term').value == '') return false; document.getElementById('ytch-search-term').submit(); return false;;return true;"><span class="yt-uix-button-content"></span></button></div></div></form><div class=""></div></div><div class="video-dds"><!-- Quick comment from Taniko, that graphical error that appears at the bottom of this element where there is no border is an issue with Hitchhiker itself. It's not my fault!
+
+Similarly with the hid here. Apparently .video-dds.open overrides the rid of .list?
+
+Finally, I would reconstruct the templates of this specific part, but I can't even find so much as a picture of what they looked like. All I know from digging around the JS is that they were probably delayloaded.-->
+<div class="topline"><span class="thumb-placeholder"></span><span class="title">All videos</span><span class="sprite_dropdown yt-sprite"></span></div><div class="list hid"><p class="yt-spinner ">
+    <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+    <span class="yt-spinner-message">Loading...</span>
+</p></div></div></div><div class="commenthub-discussion"><div class="comments"><div class="comments-list"><div class="comment-entry">
+    
+
+
+
+
+
+
+    <div data-vid="B1x8q64NXxA" data-name="Windy" data-cid="he4tmmbzge4dambuhe3dgojugm3db" data-aid="335824013622509568" class="comment-item   yt-commentbox-top ">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://old.reddit.com/r/egg_irl" data-ytid="335824013622509568">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051519419977738/unknown.png" width="48">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://old.reddit.com/r/egg_irl" data-ytid="335824013622509568">Windy</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/996091800496394361">1 hour ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">how is switching to windows server a chad move 
+
+unless it was like mac or something before</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="B1x8q64NXxA" data-replies="ytcb-he4tmmbzge4dambuhe3dgojugm3db" data-cid="he4tmmbzge4dambuhe3dgojugm3db" data-reply-to-profile="https://plus.google.com/335824013622509568" data-reply-to-name="Windy">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+  
+        
+      <div id="ytcb-he4tmmbzge4dambuhe3dgojugm3db">
+          
+  
+  
+  
+  
+  
+  
+            <div data-vid="B1x8q64NXxA" data-name="rlego" data-cid="he4tmmbzge4tonbzgyzdmnbtge2tf" data-aid="126831641371869184" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://discord.gg/7WRjXHMfXJ" data-ytid="126831641371869184">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051426683932693/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://discord.gg/7WRjXHMfXJ" data-ytid="126831641371869184">rlego</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/996091974962643155">1 hour ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">servers are meant for linux</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="B1x8q64NXxA" data-replies="ytcb-he4tmmbzge4tonbzgyzdmnbtge2tf" data-cid="he4tmmbzge4dambuhe3dgojugm3db.996091974962643155" data-reply-to-profile="https://plus.google.com/126831641371869184" data-reply-to-name="rlego">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="B1x8q64NXxA" data-name="Windy" data-cid="he4tmmbzgiydambzgi2timbrgizta" data-aid="335824013622509568" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://old.reddit.com/r/egg_irl" data-ytid="335824013622509568">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051519419977738/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://old.reddit.com/r/egg_irl" data-ytid="335824013622509568">Windy</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/996092000925401230">1 hour ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">+rlego exactly</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="B1x8q64NXxA" data-replies="ytcb-he4tmmbzgiydambzgi2timbrgizta" data-cid="he4tmmbzge4dambuhe3dgojugm3db.996092000925401230" data-reply-to-profile="https://plus.google.com/335824013622509568" data-reply-to-name="Windy">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="B1x8q64NXxA" data-name="Windy" data-cid="he4tmmbzgiydenrsha2dcnrtga4dc" data-aid="335824013622509568" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://old.reddit.com/r/egg_irl" data-ytid="335824013622509568">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051519419977738/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://old.reddit.com/r/egg_irl" data-ytid="335824013622509568">Windy</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/996092026284163082">1 hour ago (edited)</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">or bsd</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="B1x8q64NXxA" data-replies="ytcb-he4tmmbzgiydenrsha2dcnrtga4dc" data-cid="he4tmmbzge4dambuhe3dgojugm3db.996092026284163082" data-reply-to-profile="https://plus.google.com/335824013622509568" data-reply-to-name="Windy">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="B1x8q64NXxA" data-name="YukisCoffee" data-cid="he4tmmbzgmzdemzqg4ydanzshe2te" data-aid="942301470630506506" class="comment-item channel-owner  yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">YukisCoffee</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/996093223070072954">1 hour ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">🤓</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="B1x8q64NXxA" data-replies="ytcb-he4tmmbzgmzdemzqg4ydanzshe2te" data-cid="he4tmmbzge4dambuhe3dgojugm3db.996093223070072954" data-reply-to-profile="https://plus.google.com/942301470630506506" data-reply-to-name="YukisCoffee">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+      
+      </div>
+          <div class="video-thumb-rt">
+  <a class="yt-uix-tooltip" title="View this comment on video page" href="https://www.youtube.com/watch?v=B1x8q64NXxA"><div class="video-content">    <span class="ux-thumb-wrap"><span class="video-thumb  yt-thumb yt-thumb-96">
+        <span class="yt-thumb-default">
+          <span class="yt-thumb-clip">
+            <img alt="" src="//i.ytimg.com/vi/B1x8q64NXxA/hqdefault.jpg" data-group-key="thumb-group-0" width="96">
+            <span class="vertical-align"></span>
+          </span>
+        </span>
+      </span>
+  
+  
+    
+    </span>
+  
+  
+    </div></a>
+  <a class="thumb-title" href="https://www.youtube.com/watch?v=B1x8q64NXxA" style="">Agalloch - Ashes Against The Grain (2006) Full Album</a></div></div>
+
+<div class="comment-entry">
+    
+
+
+
+
+
+
+    <div data-vid="QHPc1w1Wlp8" data-name="{tai}" data-cid="he4tkojsguytgnjvguzdsnjugqyti" data-aid="804774897842257940" class="comment-item  liked yt-commentbox-top ">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://www.youtube.com/channel/UCVwc8PT74nKb2Q432kxatRw" data-ytid="804774897842257940">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051817186201620/unknown.png" width="48">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://www.youtube.com/channel/UCVwc8PT74nKb2Q432kxatRw" data-ytid="804774897842257940">{tai}</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995925135552954418">1 day ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">Okay, I'll admit something I haven't said before... I FUCKING LOVE HUGE GUNS, I know it is no surprise but goddamn it, sometimes all I can think about is owning a handgun with a long barrel. I don't know why I have a strong preference to handguns with long barrels but I do... and I can't help it! ALUCARD MY NIGGA!!!</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="QHPc1w1Wlp8" data-replies="ytcb-he4tkojsguytgnjvguzdsnjugqyti" data-cid="he4tkojsguytgnjvguzdsnjugqyti" data-reply-to-profile="https://plus.google.com/804774897842257940" data-reply-to-name="{tai}">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off">533</span>
+        <span class="like-count on">534</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button on">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "hearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-hearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-hearted"></div><div class="creator-heart-small-hearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+  
+        
+      <div id="ytcb-he4tkojsguytgnjvguzdsnjugqyti">
+          
+  
+  
+  
+  
+  
+  
+            <div data-vid="QHPc1w1Wlp8" data-name="YukisCoffee" data-cid="he4tkojsguytmojvge2demrvgy3de" data-aid="942301470630506506" class="comment-item channel-owner  yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">YukisCoffee</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995925169514225664">1 day ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">BASED</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="QHPc1w1Wlp8" data-replies="ytcb-he4tkojsguytmojvge2demrvgy3de" data-cid="he4tkojsguytgnjvguzdsnjugqyti.995925169514225664" data-reply-to-profile="https://plus.google.com/942301470630506506" data-reply-to-name="YukisCoffee">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off">1</span>
+        <span class="like-count on">2</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+      
+      </div>
+          <div class="video-thumb-rt">
+  <a class="yt-uix-tooltip" title="View this comment on video page" href="https://www.youtube.com/watch?v=QHPc1w1Wlp8"><div class="video-content">    <span class="ux-thumb-wrap"><span class="video-thumb  yt-thumb yt-thumb-96">
+        <span class="yt-thumb-default">
+          <span class="yt-thumb-clip">
+            <img alt="" src="//i.ytimg.com/vi/QHPc1w1Wlp8/hqdefault.jpg" data-group-key="thumb-group-0" width="96">
+            <span class="vertical-align"></span>
+          </span>
+        </span>
+      </span>
+  
+  
+    
+    </span>
+  
+  
+    </div></a>
+  <a class="thumb-title" href="https://www.youtube.com/watch?v=QHPc1w1Wlp8" style="">DJ Taiketsu - Night Fantasy</a></div></div>
+
+<div class="comment-entry">
+    
+
+
+
+
+
+
+    <div data-vid="4xYLklpYCZk" data-name="YukisCoffee" data-cid="he4tkmjzge4tiobugu4tmnjvgi4dj" data-aid="942301470630506506" class="comment-item channel-owner  yt-commentbox-top ">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png" width="48">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">YukisCoffee</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995191948459655289">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">PINOY 🇵🇭✝️ PRIDE</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="4xYLklpYCZk" data-replies="ytcb-he4tkmjzge4tiobugu4tmnjvgi4dj" data-cid="he4tkmjzge4tiobugu4tmnjvgi4dj" data-reply-to-profile="https://plus.google.com/942301470630506506" data-reply-to-name="YukisCoffee">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off">400</span>
+        <span class="like-count on">401</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+  
+        
+      <div id="ytcb-he4tkmjzge4tiobugu4tmnjvgi4dj">
+          
+  
+  
+  
+  
+  
+  
+            <div data-vid="4xYLklpYCZk" data-name="{tai}" data-cid="he4tknjxgaztcnbwga3damzqha2dj" data-aid="804774897842257940" class="comment-item  liked yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://www.youtube.com/channel/UCVwc8PT74nKb2Q432kxatRw" data-ytid="804774897842257940">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051817186201620/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://www.youtube.com/channel/UCVwc8PT74nKb2Q432kxatRw" data-ytid="804774897842257940">{tai}</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995570314606030849">2 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">My first language is FILIPINO!!!! PINOY 🇵🇭 ✝️ PRIDE</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="4xYLklpYCZk" data-replies="ytcb-he4tknjxgaztcnbwga3damzqha2dj" data-cid="he4tkmjzge4tiobugu4tmnjvgi4dj.995570314606030849" data-reply-to-profile="https://plus.google.com/804774897842257940" data-reply-to-name="{tai}">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off">457</span>
+        <span class="like-count on">458</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button on">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "hearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-hearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-hearted"></div><div class="creator-heart-small-hearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="4xYLklpYCZk" data-name="Aubrey" data-cid="he4tknzugmztmnrxgi3tqnryguzth" data-aid="912499900699254785" class="comment-item  liked yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://www.youtube.com/aubreyREAL" data-ytid="912499900699254785">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051667592155187/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://www.youtube.com/aubreyREAL" data-ytid="912499900699254785">Aubrey</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995743366727868537">1 day ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">TRUE 
+PINOY 🇵🇭✝️ PRIDE!!!!!!!!!!!</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="4xYLklpYCZk" data-replies="ytcb-he4tknzugmztmnrxgi3tqnryguzth" data-cid="he4tkmjzge4tiobugu4tmnjvgi4dj.995743366727868537" data-reply-to-profile="https://plus.google.com/912499900699254785" data-reply-to-name="Aubrey">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off">364</span>
+        <span class="like-count on">365</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button on">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "hearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-hearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-hearted"></div><div class="creator-heart-small-hearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+      
+      </div>
+          <div class="video-thumb-rt">
+  <a class="yt-uix-tooltip" title="View this comment on video page" href="https://www.youtube.com/watch?v=4xYLklpYCZk"><div class="video-content">    <span class="ux-thumb-wrap"><span class="video-thumb  yt-thumb yt-thumb-96">
+        <span class="yt-thumb-default">
+          <span class="yt-thumb-clip">
+            <img alt="" src="//i.ytimg.com/vi/4xYLklpYCZk/hqdefault.jpg" data-group-key="thumb-group-0" width="96">
+            <span class="vertical-align"></span>
+          </span>
+        </span>
+      </span>
+  
+  
+    
+    </span>
+  
+  
+    </div></a>
+  <a class="thumb-title" href="https://www.youtube.com/watch?v=4xYLklpYCZk" style="">[FULL] Chobits ED 1 - 『Raison d'Être』 - Original/English</a></div></div>
+
+<div class="comment-entry">
+    
+
+
+
+
+
+
+    <div data-vid="" data-name="YukisCoffee" data-cid="he4tkmjygiytanrugq2tmmjzgmydb" data-aid="942301470630506506" class="comment-item channel-owner  yt-commentbox-top ">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png" width="48">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">YukisCoffee</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995182106445619301">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">WHO CARES 
+
+RIPBOZO</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="" data-replies="ytcb-he4tkmjygiytanrugq2tmmjzgmydb" data-cid="he4tkmjygiytanrugq2tmmjzgmydb" data-reply-to-profile="https://plus.google.com/942301470630506506" data-reply-to-name="YukisCoffee">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off">32</span>
+        <span class="like-count on">33</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+  
+        
+      <div id="ytcb-he4tkmjygiytanrugq2tmmjzgmydb">
+          
+  
+  
+  
+  
+  
+  
+            <div data-vid="" data-name="{tai}" data-cid="he4tkmjyguytonjxg4ydcobrgy4tc" data-aid="804774897842257940" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://www.youtube.com/channel/UCVwc8PT74nKb2Q432kxatRw" data-ytid="804774897842257940">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051817186201620/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://www.youtube.com/channel/UCVwc8PT74nKb2Q432kxatRw" data-ytid="804774897842257940">{tai}</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995185175770181692">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">THE FUCK 
+
+I'm just gonna pretend I killed Abe in the name of God</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="" data-replies="ytcb-he4tkmjyguytonjxg4ydcobrgy4tc" data-cid="he4tkmjygiytanrugq2tmmjzgmydb.995185175770181692" data-reply-to-profile="https://plus.google.com/804774897842257940" data-reply-to-name="{tai}">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="" data-name="YukisCoffee" data-cid="he4tkmjyguzdonzxgy3tenjygeytc" data-aid="942301470630506506" class="comment-item channel-owner  yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">YukisCoffee</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995185277767258112">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">+{tai} Based</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="" data-replies="ytcb-he4tkmjyguzdonzxgy3tenjygeytc" data-cid="he4tkmjygiytanrugq2tmmjzgmydb.995185277767258112" data-reply-to-profile="https://plus.google.com/942301470630506506" data-reply-to-name="YukisCoffee">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="" data-name="{tai}" data-cid="he4tkmjyguztanzrgm4tsobrgmzdj" data-aid="804774897842257940" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://www.youtube.com/channel/UCVwc8PT74nKb2Q432kxatRw" data-ytid="804774897842257940">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051817186201620/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://www.youtube.com/channel/UCVwc8PT74nKb2Q432kxatRw" data-ytid="804774897842257940">{tai}</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995185307139981329">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">Killing people in the name of God is kinda based tbh 
+Like it's a little messed up to do bad things in God's name don't get me wrong 
+But John Lennon was a devil worshipping hippie drug addict and the guy that killed him did it in the name of God lol 
+I HATE THE BEATLES!!!! 
+#FUCKTHEBEATLES</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="" data-replies="ytcb-he4tkmjyguztanzrgm4tsobrgmzdj" data-cid="he4tkmjygiytanrugq2tmmjzgmydb.995185307139981329" data-reply-to-profile="https://plus.google.com/804774897842257940" data-reply-to-name="{tai}">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="" data-name="YukisCoffee" data-cid="he4tkmjygu2dmobzgm2tenbrg43tj" data-aid="942301470630506506" class="comment-item channel-owner  yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://github.com/YukisCoffee" data-ytid="942301470630506506">YukisCoffee</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995185468935241779">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">+{tai} Assassinating john lennon was based just because the beatles make bad music</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="" data-replies="ytcb-he4tkmjygu2dmobzgm2tenbrg43tj" data-cid="he4tkmjygiytanrugq2tmmjzgmydb.995185468935241779" data-reply-to-profile="https://plus.google.com/942301470630506506" data-reply-to-name="YukisCoffee">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+      
+      </div>
+          <div class="video-thumb-rt">
+  <a class="yt-uix-tooltip" title="View this comment on video page" href="https://twitter.com/thehill/status/1545620285050822656"><div class="video-content">    <span class="ux-thumb-wrap"><span class="video-thumb  yt-thumb yt-thumb-96">
+        <span class="yt-thumb-default">
+          <span class="yt-thumb-clip">
+            <img alt="" src="https://cdn.discordapp.com/attachments/996051262883778600/996092096601665577/unknown.png" data-group-key="thumb-group-0" width="96">
+            <span class="vertical-align"></span>
+          </span>
+        </span>
+      </span>
+  
+  
+    
+    </span>
+  
+  
+    </div></a>
+  <a class="thumb-title" href="https://twitter.com/thehill/status/1545620285050822656" style="">Biden "stunned" and "outraged" by Abe assassination</a></div></div>
+
+<div class="comment-entry">
+    
+
+
+
+
+
+
+    <div data-vid="lxMNQiuaQns" data-name="ItsAvrilNotAveral" data-cid="he4tkmrvgy4doojsge3tgobzgyzti" data-aid="393540897738063880" class="comment-item   yt-commentbox-top ">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://twitter.com/simsiously" data-ytid="393540897738063880">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051591717204048/unknown.png" width="48">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://twitter.com/simsiously" data-ytid="393540897738063880">ItsAvrilNotAveral</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995256879217389638">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">I cannot explain to you how much I hate this image</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="lxMNQiuaQns" data-replies="ytcb-he4tkmrvgy4doojsge3tgobzgyzti" data-cid="he4tkmrvgy4doojsge3tgobzgyzti" data-reply-to-profile="https://plus.google.com/393540897738063880" data-reply-to-name="ItsAvrilNotAveral">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+  
+        
+      <div id="ytcb-he4tkmrvgy4doojsge3tgobzgyzti">
+          
+  
+  
+  
+  
+  
+  
+            <div data-vid="lxMNQiuaQns" data-name="Reprety" data-cid="he4tkmrwgeytenrvgezdemrwgm4de" data-aid="542447848113963028" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://www.youtube.com/c/v3videos3" data-ytid="542447848113963028">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051377254043738/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://www.youtube.com/c/v3videos3" data-ytid="542447848113963028">Reprety</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995261126512226384">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">why ??</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="lxMNQiuaQns" data-replies="ytcb-he4tkmrwgeytenrvgezdemrwgm4de" data-cid="he4tkmrvgy4doojsge3tgobzgyzti.995261126512226384" data-reply-to-profile="https://plus.google.com/542447848113963028" data-reply-to-name="Reprety">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="lxMNQiuaQns" data-name="ItsAvrilNotAveral" data-cid="he4tkmrygq4tcnztga2dsnjqhaydg" data-aid="393540897738063880" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://twitter.com/simsiously" data-ytid="393540897738063880">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051591717204048/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://twitter.com/simsiously" data-ytid="393540897738063880">ItsAvrilNotAveral</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995284917304950806">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">I have seen it too many times</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="lxMNQiuaQns" data-replies="ytcb-he4tkmrygq4tcnztga2dsnjqhaydg" data-cid="he4tkmrvgy4doojsge3tgobzgyzti.995284917304950806" data-reply-to-profile="https://plus.google.com/393540897738063880" data-reply-to-name="ItsAvrilNotAveral">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="lxMNQiuaQns" data-name="Reprety" data-cid="he4tkmzqgi3tenzsgm4dgmbtha3dh" data-aid="542447848113963028" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://www.youtube.com/c/v3videos3" data-ytid="542447848113963028">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051377254043738/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://www.youtube.com/c/v3videos3" data-ytid="542447848113963028">Reprety</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995302727238303867">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">The more i see it the better it gets</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="lxMNQiuaQns" data-replies="ytcb-he4tkmzqgi3tenzsgm4dgmbtha3dh" data-cid="he4tkmrvgy4doojsge3tgobzgyzti.995302727238303867" data-reply-to-profile="https://plus.google.com/542447848113963028" data-reply-to-name="Reprety">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+            <div data-vid="lxMNQiuaQns" data-name="ItsAvrilNotAveral" data-cid="he4tkmzqgq3dknzxgi2tinbuga4tg" data-aid="393540897738063880" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://twitter.com/simsiously" data-ytid="393540897738063880">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051591717204048/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://twitter.com/simsiously" data-ytid="393540897738063880">ItsAvrilNotAveral</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/995304657725444096">3 days ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">everywhere I look, I see his face</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="lxMNQiuaQns" data-replies="ytcb-he4tkmzqgq3dknzxgi2tinbuga4tg" data-cid="he4tkmrvgy4doojsge3tgobzgyzti.995304657725444096" data-reply-to-profile="https://plus.google.com/393540897738063880" data-reply-to-name="ItsAvrilNotAveral">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+      
+      </div>
+          <div class="video-thumb-rt">
+  <a class="yt-uix-tooltip" title="View this comment on video page" href="https://www.youtube.com/watch?v=lxMNQiuaQns"><div class="video-content">    <span class="ux-thumb-wrap"><span class="video-thumb  yt-thumb yt-thumb-96">
+        <span class="yt-thumb-default">
+          <span class="yt-thumb-clip">
+            <img alt="" src="//i.ytimg.com/vi/lxMNQiuaQns/hqdefault.jpg" data-group-key="thumb-group-0" width="96">
+            <span class="vertical-align"></span>
+          </span>
+        </span>
+      </span>
+  
+  
+    
+    </span>
+  
+  
+    </div></a>
+  <a class="thumb-title" href="https://www.youtube.com/watch?v=lxMNQiuaQns" style="">MC BR -  VOU PASSAR SARRANDO A GLOCK COM PENTÃO DE 30 ♪</a></div></div>
+
+<div class="comment-entry">
+    
+
+
+
+
+
+
+    <div data-vid="ZfT4KfF4Evs" data-name="daylin" data-cid="he4teobzhezdknzxheztenrrgu4ti" data-aid="282581828852776960" class="comment-item   yt-commentbox-top ">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://www.youtube.com/theundeadwolf0" data-ytid="282581828852776960">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996094939433812048/unknown.png" width="48">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://www.youtube.com/theundeadwolf0" data-ytid="282581828852776960">daylin</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/992899257793261598">1 week ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">youtube app is mega obfuscated</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="ZfT4KfF4Evs" data-replies="ytcb-he4teobzhezdknzxheztenrrgu4ti" data-cid="he4teobzhezdknzxheztenrrgu4ti" data-reply-to-profile="https://plus.google.com/282581828852776960" data-reply-to-name="daylin">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+  
+        
+      <div id="ytcb-he4teobzhezdknzxheztenrrgu4ti">
+          
+  
+  
+  
+  
+  
+  
+            <div data-vid="ZfT4KfF4Evs" data-name="Reprety" data-cid="he4teobzhezdsojrgqydomjygy3dc" data-aid="542447848113963028" class="comment-item   yt-commentbox-top reply">
+    <div class="user-photo">
+  <a target="_blank" class="g-hovercard" href="https://www.youtube.com/c/v3videos3" data-ytid="542447848113963028">
+    <img src="https://cdn.discordapp.com/attachments/996051262883778600/996051377254043738/unknown.png" width="32">
+  </a>
+</div>
+
+  <div class="content video-title-visible">
+      <div class="comment-header">
+  <a class="user-name g-hovercard" target="_blank" href="https://www.youtube.com/c/v3videos3" data-ytid="542447848113963028">Reprety</a>
+  <span class="spacer"></span>
+  <!-- Make sure you're in Network Neighbourhood before clicking -->
+  <a class="time" href="https://discord.com/channels/863543357276028958/959573014075297792/992899299140718662">1 week ago</a>
+</div>
+
+      <div class="comment-text">
+<div class="comment-text-content">yes it has google sexguard 
+
+or what is called 
+
+proguard</div>    <div class="comment-text-toggle hid">
+    <a href="#" onclick="return false;" class="expand">
+Read more
+    </a>
+    <a href="#" onclick="return false;" class="collapse hid">
+Show less
+    </a>
+  </div>
+</div>
+
+    
+<div class="comment-footer">
+  <div class="comment-footer-actions">
+        <span class="comment-footer-action yt-commentbox-show " data-vid="ZfT4KfF4Evs" data-replies="ytcb-he4teobzhezdsojrgqydomjygy3dc" data-cid="he4teobzhezdknzxheztenrrgu4ti.992899299140718662" data-reply-to-profile="https://plus.google.com/542447848113963028" data-reply-to-name="Reprety">
+Reply
+      </span>
+      <span class="separator">·</span>
+        <span class="like-count off"></span>
+        <span class="like-count on">1</span>
+      <table class="footer-button-bar">
+        <tbody><tr>
+          
+<td data-action="like" class="mod-button">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_like default-state"></div>
+      <div class="sprite_like_on on-state"></div>
+  </div>
+</td>
+
+          
+<td class="mod-button" data-action="dislike">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_dislike default-state"></div>
+      <div class="sprite_dislike_on on-state"></div>
+  </div>
+</td><td data-action="heart" class="mod-button">
+      <div class="mod-button-content yt-uix-tooltip creator-heart">
+  <!-- Small little comment from Taniko here, creator-heart is very strange and it seems that they switched the states by essentially replacing all classes and swapping "unhearted" with "hearted". Lazy devs :P -->
+    <img class="creator-heart-background-unhearted" src="https://cdn.discordapp.com/attachments/996051262883778600/996051287730815097/unknown.png"><div class="creator-heart-big-unhearted"></div><div class="creator-heart-small-unhearted">
+                   <div class="creator-heart-small-container">
+                      <div class="creator-heart-small-left" style="background: #ff0000;"></div>
+                      <div class="creator-heart-small-right" style="background: #ff0000;"></div>
+                   </div>
+                </div>
+      
+  </div>
+  
+</td>
+
+        </tr>
+      </tbody></table>
+  </div>
+  <div class="yt-commentbox-container"></div>
+</div>
+
+  </div>
+  <div class="actions video-title-visible">
+    
+
+
+<table class="mod-buttonbar">
+  <tbody><tr>
+    
+<td class="mod-button" data-action="remove">
+  <div class="mod-button-content yt-uix-tooltip " title="Remove">
+    <div class="sprite_delete default-state"></div>
+  </div>
+</td><td class="mod-button" data-action="flag">
+  <div class="mod-button-content yt-uix-tooltip ">
+    <div class="sprite_flag default-state"></div>
+      <div class="dropdown">
+        <div class="mod-arrow">▼</div>
+        
+          <div class="mod-list hid">
+    <div class="mod-list-button" data-action="report_spam">Report spam or abuse</div><div class="mod-list-button" data-action="ban">Hide this user's comments on this channel</div>
+<div class="add-options-separator"></div><div class="approved-container"><div class="mod-list-button" data-action="add_approved">Always approve comments from this user</div></div><div class="moderator-container"><div class="mod-list-button" data-action="add_moderator">Add this user as a comment moderator</div></div></div>
+
+      </div>
+  </div>
+</td>
+
+  </tr>
+</tbody></table>
+
+  </div>
+</div>
+
+      
+      </div>
+          <div class="video-thumb-rt">
+  <a class="yt-uix-tooltip" title="View this comment on video page" href="https://www.youtube.com/watch?v=ZfT4KfF4Evs"><div class="video-content">    <span class="ux-thumb-wrap"><span class="video-thumb  yt-thumb yt-thumb-96">
+        <span class="yt-thumb-default">
+          <span class="yt-thumb-clip">
+            <img alt="" src="//i.ytimg.com/vi/ZfT4KfF4Evs/hqdefault.jpg" data-group-key="thumb-group-0" width="96">
+            <span class="vertical-align"></span>
+          </span>
+        </span>
+      </span>
+  
+  
+    
+    </span>
+  
+  
+    </div></a>
+  <a class="thumb-title" href="https://www.youtube.com/watch?v=ZfT4KfF4Evs" style="">Deafheaven - Infinite Granite [2021]</a></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+</div><form action="/comment_ajax">
+        <input type="hidden" name="filter" value="jNQXAC9IVRw">
+      <div class="paginator load-comments" id="yt-comments-paginator" data-token="hi">
+        <span class="show-more">
+Show more
+        </span>
+        <span class="loading hid">
+            <span class="yt-spinner">
+      <img src="https://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" title="Loading icon" class="yt-spinner-img yt-sprite">
+
+Loading...
+  </span>
+
+        </span>
+      </div>
+    </form></div></div></div></div></div></div>
+</div></div></div></div>      <div id="footer-container" class="yt-base-gutter force-layer"><div id="footer"><div id="footer-main"><div id="footer-logo"><a href="/" id="footer-logo-link" title="YouTube home"><span class="footer-logo-icon yt-sprite"></span></a></div>  <ul class="pickers yt-uix-button-group" data-button-toggle-group="optional">
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon" type="button" onclick=";return false;" id="yt-picker-language-button" data-button-action="yt.www.picker.load" data-button-menu-id="arrow-display" data-picker-position="footer" data-picker-key="language" data-button-toggle="true"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-language yt-sprite"></span></span><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Language:
+  </span>
+  English
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-country-button" data-button-action="yt.www.picker.load" data-button-menu-id="arrow-display" data-picker-position="footer" data-picker-key="country" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Location:
+  </span>Philippines (PINOY PRIDE PINOY PRIDE)</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+      <li>
+            <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default" type="button" onclick=";return false;" id="yt-picker-safetymode-button" data-button-action="yt.www.picker.load" data-button-menu-id="arrow-display" data-picker-position="footer" data-picker-key="safetymode" data-button-toggle="true"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Restricted Mode:
+  </span>
+Off
+</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+
+
+      </li>
+  </ul>
+<a href="/feed/history" class="yt-uix-button  footer-history yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon" data-sessionlink="ei=_-cDXdqdKJq9igSQsan4Cg"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-footer-history yt-sprite"></span></span><span class="yt-uix-button-content">History</span></a>    <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon yt-uix-button-reverse yt-google-help-link inq-no-click " type="button" onclick=";return false;" id="google-help" data-ghelp-tracking-param="" data-ghelp-anchor="google-help" data-load-chat-support="true" data-feedback-product-id="59"><span class="yt-uix-button-icon-wrapper"><span class="yt-uix-button-icon yt-uix-button-icon-questionmark yt-sprite"></span></span><span class="yt-uix-button-content">Help
+</span></button>
+      <div id="yt-picker-language-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-country-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-safetymode-footer" class="yt-picker" style="display: none">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+</div><div id="footer-links"><ul id="footer-links-primary">  <li><a href="//www.youtube.com/yt/about/">About</a></li>
+  <li><a href="//www.youtube.com/yt/press/">Press</a></li>
+  <li><a href="//www.youtube.com/yt/copyright/">Copyright</a></li>
+  <li><a href="//www.youtube.com/yt/creators/">Creators</a></li>
+  <li><a href="//www.youtube.com/yt/advertise/">Advertise</a></li>
+  <li><a href="//www.youtube.com/yt/dev/">Developers</a></li>
+</ul><ul id="footer-links-secondary">  <li><a href="/t/terms">Terms</a></li>
+  <li><a href="https://www.google.com/intl/en/policies/privacy/">Privacy</a></li>
+  <li><a href="//www.youtube.com/yt/policyandsafety/">
+Policy &amp; Safety
+  </a></li>
+  <li><a href="//support.google.com/youtube/?hl=en" onclick="return yt.www.feedback.start(59, {" segment":6});"="" class="reportbug">Send feedback</a></li>
+  <li>
+    <a href="/testtube">Test new features</a>
+  </li>
+  <li></li>
+</ul></div></div></div>
+
+
+      <div class="yt-dialog hid " id="feed-privacy-lb">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg" role="dialog">
+        <div class="yt-dialog-fg-content">
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+              <div id="feed-privacy-dialog">
+  </div>
+
+          </div>
+          <div class="yt-dialog-working">
+              <div class="yt-dialog-working-overlay"></div>
+  <div class="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+        <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        Working...
+    </span>
+  </p>
+
+      </div>
+  </div>
+
+          </div>
+        </div>
+        <div class="yt-dialog-focus-trap" tabindex="0"></div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="hidden-component-template-wrapper" class="hid"><div id="yt-uix-videoactionmenu-menu" class="yt-ui-menu-content">  <div class="hide-on-create-pl-panel">
+    <h3>
+Add to
+    </h3>
+  </div>
+  <div class="add-to-widget">
+      <p class="yt-spinner ">
+        <span title="Loading icon" class="yt-spinner-img  yt-sprite"></span>
+
+    <span class="yt-spinner-message">
+        Loading playlists...
+    </span>
+  </p>
+
+  </div>
+</div></div>    <script>var ytspf = ytspf || {};ytspf.enabled = true;ytspf.config = {'reload-identifier': 'spfreload'};ytspf.config['request-headers'] = {'X-YouTube-Identity-Token': "QUFFLUhqbHV3MXhpSDJyNVRqY0ZkQnlmcFdpYmEyUDBXQXw="};ytspf.config['experimental-request-headers'] = ytspf.config['request-headers'];ytspf.config['cache-max'] = 50;ytspf.config['navigate-limit'] = 50;ytspf.config['navigate-lifetime'] = 64800000;</script>
+  <script type="text/javascript" name="spf/spf" src="//s.ytimg.com/yts/jsbin/spf-vflqCgDoF/spf.js"></script>
+<script>if (window.ytcsi) {window.ytcsi.tick("je", null, '');}</script>  <script type="text/javascript" name="www-core/www-core" src="//s.ytimg.com/yts/jsbin/www-core-vflulFe6d/www-core.js"></script>
+<script>yt.setConfig({"CREATOR_CONTEXT":{"o":"U","ar":"3"},"OWNER_PICKER_REDIRECT_URL":"\/my_videos"});</script>      <script type="text/javascript" name="www-monetizationagreement/www-monetizationagreement" src="//s.ytimg.com/yts/jsbin/www-monetizationagreement-vflv--0-S/www-monetizationagreement.js"></script>
+
+  <script type="text/javascript" name="www-subscribers/www-subscribers" src="//s.ytimg.com/yts/jsbin/www-commenthub-vfl0ix_mq/www-commenthub.js"></script><script>yt.pubsub.subscribe('init', yt.www.commenthub.init);</script><script type="text/javascript">window['_402'] = window['_402'] || {};window['_402']['sc'] = 'isAffiliate: ' + false;</script><script async="" defer="" src="//www.google.com/insights/consumersurveys/async_survey?site=jb25dvgc6hgrgaqajuzzko6rni"></script>  <script type="text/javascript" name="www-creator_url_param_fixer/www-creator_url_param_fixer" src="//s.ytimg.com/yts/jsbin/www-creator_url_param_fixer-vflErK__e/www-creator_url_param_fixer.js"></script>
+<script>yt.setConfig({INNERTUBE_API_KEY: "AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8",INNERTUBE_CONTEXT_CLIENT_NAME: 1,INNERTUBE_CONTEXT_CLIENT_VERSION: "1.20190613",INNERTUBE_API_VERSION: "v1",GAPI_HINT_PARAMS: "m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.6Hr6HfhQmkw.O\/d=1\/rs=AHpOoo_002wlh5Kwm-a9Vn_hwBzXlB2L_A\/m=__features__",'VISITOR_DATA': "CgswU3cxMUdwTnlXWSj_z4_oBQ%3D%3D",'DELEGATED_SESSION_ID': null,'GAPI_HOST': "https:\/\/apis.google.com",'GAPI_LOCALE': "en_US",'INNERTUBE_CONTEXT_HL': "en",'INNERTUBE_CONTEXT_GL': "AE",'XHR_APIARY_HOST': "youtubei.youtube.com"});yt.setConfig({});yt.setConfig({'PAGE_NAME': "subscribers",'LOGGED_IN': true,'SESSION_INDEX': 0,'VALID_SESSION_TEMPDATA_DOMAINS': ["www.youtube.com","gaming.youtube.com"],'PARENT_TRACKING_PARAMS': "",'FORMATS_FILE_SIZE_JS': ["%s B","%s KB","%s MB","%s GB","%s TB"],'ONE_PICK_URL': "",'GOOGLEPLUS_HOST': "https:\/\/plus.google.com",'PAGEFRAME_JS': "\/yts\/jsbin\/www-pageframe-vflkB8yJ7\/www-pageframe.js",'GAPI_LOADER_URL': "\/yts\/jsbin\/www-gapi-loader-vflF1XXcI\/www-gapi-loader.js",'JS_COMMON_MODULE': "\/yts\/jsbin\/www-en_US-vflDMDgQ8\/common.js",'PAGE_FRAME_DELAYLOADED_CSS': "\/yts\/cssbin\/www-pageframedelayloaded-webp-vflCjAqy2.css",'EXPERIMENT_FLAGS': {"web_gel_debounce_ms":10000,"app_settings_snapshot_min_time_between_snapshots_hours":24,"service_worker_push_logged_out_prompt_watches":-1,"web_always_load_chat_support":true,"live_chat_flash_money_button_on_super_chat_delivery":true,"live_chat_message_sampling_rate":4.0,"service_worker_push_prompt_delay_microseconds":3888000000000,"player_swfcfg_cleanup":true,"service_worker_push_force_notification_prompt_tag":"1","enable_webcam_scheduling_hint":true,"service_worker_scope":"\/","cold_load_nav_start_web":true,"interaction_click_on_gel_web":true,"same_domain_static_resources_desktop":true,"video_to_ad_use_gel":true,"interaction_logging_on_gel_web":true,"log_web_screen_end":true,"live_chat_increased_min_height":true,"kevlar_guide_refresh":true,"kevlar_library_v1_edu":true,"live_chat_unicode_emoji_json_url":"","use_webrtc_ingestor_handshake":true,"enable_server_side_search_pyv":true,"watch_next_pause_autoplay_lact_sec":4500,"optimistically_create_transport_client":true,"web_logging_max_batch":100,"service_worker_push_prompt_cap":-1,"interaction_screen_on_gel_web":true,"enable_classic_encoder_pointback":true,"enable_afv_div_reset_in_kevlar":true,"live_chat_inline_moderation":true,"service_worker_enabled":true,"mentions_linkify_user_mention":true,"live_chat_replay_milliqps_threshold":5000,"enable_docked_chat_messages":true,"desktop_polymer_video_masthead_always_use_responsive_iframe":true,"cancel_pending_navs":true,"player_unified_fullscreen_transitions":true,"botguard_periodic_refresh":true,"service_worker_push_home_only":true,"live_chat_top_chat_split":0.5,"ad_to_video_use_gel":true,"web_android9_useragent_fix":true,"log_window_onerror_fraction":0.1,"enable_webcam_dvr":true,"web_pause_video_on_companion_clicked":true,"enable_live_studio_url":true,"enable_midroll_ad_insertion":true,"desktop_pyv_on_watch_missing_params":true,"enable_sticker_packs_scrolling":true,"service_worker_push_watch_page_prompt":true,"desktop_videowall_companion_wta_support":true,"live_chat_flagging_reasons":true,"service_worker_push_home_page_prompt":true,"kevlar_library_profile_column":true,"desktop_polymer_video_masthead_wta_support":true,"disable_legacy_desktop_remote_queue":true,"service_worker_push_prompt_delay_ms":3888000000,"use_push_for_desktop_live_chat":true,"desktop_action_companion_wta_support":true,"enable_verified_author_highlights":true,"enable_classic_creation_menu":true,"enable_desktop_polymer_video_masthead":true,"enable_super_chat_like_stickers_ui":true,"lact_local_listeners":true,"enable_wta_classic_search_pyv":true,"enable_gel_web_client_event_id":true,"is_browser_supported_for_live_studio_streaming":true,"app_settings_snapshot_is_logging_enabled":true,"log_vis_on_tab_change":true,"enable_html5_conversion_ve_reporting":true,"consent_url_override":"","enable_playlist_visibility":true,"enable_creator_highlights":true,"gfeedback_for_signed_out_users_enabled":true,"enable_live_studio_ux":true,"web_gel_lact":true,"desktop_polymer_video_masthead_mute_ad_support":true,"enable_webcam_scheduling":true,"is_browser_support_for_webcam_streaming":true,"desktop_polymer":true,"live_chat_replay":true,"desktop_pyv_on_watch_via_valor":true,"desktop_image_companion_wta_support":true,"desktop_polymer_video_masthead_session_tempdata_ttl":30,"desktop_pyv_on_watch_override_lact":true,"autoplay_pause_by_lact_sampling_fraction":0.0,"live_chat_top_chat_window_length_sec":4,"live_chat_continuation_expiration_usec":0,"web_system_health_fraction":0.01,"kevlar_library":true,"service_worker_push_enabled":true,"very_optimistically_create_gel_client":true,"warm_load_nav_start_web":true,"enable_webcam_dynamic_poll_period":true,"log_web_meta_interval_ms":0,"desktop_shopping_companion_wta_support":true,"html5_serverside_pagead_id_sets_cookie":true,"autoescape_tempdata_url":true,"kevlar_library_v1":true,"autoplay_pause_sampling_fraction":0.0,"desktop_notification_set_title_bar":true,"debug_forced_promo_id":"","highlight_clip_creation_ftue_display_option":0,"enable_logging_directives_desktop":true,"enable_premium_voluntary_pause":true,"attach_child_on_gel_web":true,"catch_invalid_url_components":true,"enable_watch_next_pause_autoplay_lact":true,"desktop_classic_video_masthead_wta_support":true,"remove_web_visibility_batching":true,"desktop_notification_high_priority_ignore_push":true,"live_chat_use_new_default_filter_mode":true,"autoplay_pause_by_lact_sec":0,"clear_web_implicit_clicktracking":true,"retry_web_logging_batches":true,"prefetch_comments_ms_after_video":0,"enable_more_related_ve_logging":true,"enable_desktop_polymer_video_masthead_upgrade":true,"use_watch_fragments2":true,"youtubei_for_web":true,"desktop_companion_wta_support":true,"enable_youtubei_innertube":true},'GUIDE_DELAY_LOAD': true,'GUIDE_DELAYLOADED_CSS': "\/yts\/cssbin\/www-guide-webp-vflLj-Bwg.css",'HIGH_CONTRAST_MODE_CSS': "\/yts\/cssbin\/www-highcontrastmode-webp-vfl2pKdoC.css",'PREFETCH_LINKS': false,'PREFETCH_LINKS_MAX': 1,'PREFETCH_AUTOPLAY': false,'PREFETCH_AUTOPLAY_TIME': 0,'PREFETCH_AUTONAV': false,'PREBUFFER_MAX': 1,'PREBUFFER_LINKS': false,'PREBUFFER_AUTOPLAY': false,'PREBUFFER_AUTONAV': false,'WATCH_LATER_BUTTON': "\n\n  \u003cbutton class=\"yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button yt-uix-tooltip\" type=\"button\" onclick=\";return false;\" title=\"Watch later\" role=\"button\" data-video-ids=\"__VIDEO_ID__\"\u003e\u003c\/button\u003e\n",'WATCH_QUEUE_BUTTON': "  \u003cbutton class=\"yt-uix-button yt-uix-button-size-small yt-uix-button-default yt-uix-button-empty yt-uix-button-has-icon no-icon-markup addto-button addto-queue-button video-actions spf-nolink hide-until-delayloaded addto-tv-queue-button yt-uix-tooltip\" type=\"button\" onclick=\";return false;\" title=\"Queue\" data-video-ids=\"__VIDEO_ID__\" data-style=\"tv-queue\"\u003e\u003c\/button\u003e\n",'WATCH_QUEUE_MENU': "  \u003cspan class=\"thumb-menu dark-overflow-action-menu video-actions\"\u003e\n    \u003cbutton onclick=\";return false;\" class=\"yt-uix-button-reverse flip addto-watch-queue-menu spf-nolink hide-until-delayloaded yt-uix-button yt-uix-button-dark-overflow-action-menu yt-uix-button-size-default yt-uix-button-has-icon no-icon-markup yt-uix-button-empty\" type=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\" \u003e\u003cspan class=\"yt-uix-button-arrow yt-sprite\"\u003e\u003c\/span\u003e\u003cul class=\"watch-queue-thumb-menu yt-uix-button-menu yt-uix-button-menu-dark-overflow-action-menu hid\"\u003e\u003cli role=\"menuitem\" class=\"overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-next yt-uix-button-menu-item\" data-action=\"play-next\" onclick=\";return false;\"  data-video-ids=\"__VIDEO_ID__\"\u003e\u003cspan class=\"addto-watch-queue-menu-text\"\u003ePlay next\u003c\/span\u003e\u003c\/li\u003e\u003cli role=\"menuitem\" class=\"overflow-menu-choice addto-watch-queue-menu-choice addto-watch-queue-play-now yt-uix-button-menu-item\" data-action=\"play-now\" onclick=\";return false;\"  data-video-ids=\"__VIDEO_ID__\"\u003e\u003cspan class=\"addto-watch-queue-menu-text\"\u003ePlay now\u003c\/span\u003e\u003c\/li\u003e\u003c\/ul\u003e\u003c\/button\u003e\n  \u003c\/span\u003e\n",'SAFETY_MODE_PENDING': false,'LOCAL_DATE_TIME_CONFIG': {"amPms":["AM","PM"],"weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"formatShortTime":"h:mm a","dateFormats":["MMMM d, y 'at' h:mm a","MMMM d, y","MMM d, y","MMM d, y"],"firstWeekCutoffDay":3,"shortWeekdays":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"formatShortDate":"MMM d, y","weekendRange":[6,5],"formatLongDate":"MMMM d, y 'at' h:mm a","formatWeekdayShortTime":"EE h:mm a","formatLongDateOnly":"MMMM d, y","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"firstDayOfWeek":0},'PAGE_CL': 253062866,'PAGE_BUILD_LABEL': "youtube.ytfe.desktop_20190612_3_RC1",'VARIANTS_CHECKSUM': "36cb7735a08129de85d9a24a5dff4514",'CLIENT_PROTOCOL': "HTTP\/1.1",'CLIENT_TRANSPORT': "tcp",'MDX_ENABLE_CASTV2': true,'MDX_ENABLE_QUEUE': true,'FEEDBACK_BUCKET_ID': "Other",'FEEDBACK_LOCALE_LANGUAGE': "en",'FEEDBACK_LOCALE_EXTRAS': {"accept_language":"es-ES,es;q=0.9,en;q=0.8","experiments":"23700266,23701297,23701882,23709359,23709532,23710313,23710863,23714049,23717597,23718617,23722284,23722367,23725261,23725678,23727873,23728468,23730614,23733270,23733598,23733978,23734676,23735285,23736684,23736849,23736982,23737288,23742989,23744137,23744176,23746939,23751767,23755417,23755964,23755966,23756151,23757189,23757575,23758145,23758394,23758614,23759078,23759349,23760211,23760569,23760697,23762090,23762106,23762272,23764251,23765159,23767295,23768776,23772053,23772279,23772704,23774612,23776030,23776775,23778038,23779384,23780521,23782067,23782268,23783005,23783084,23783094,23784102,23784259,23785483,23785890,23786443,23787321,23788834,23789215,23789385,23789623,23790586,23790726,23791577,23791696,23791886,23792965,23792971,23793228,23793505,23793834,23794214,23794339,23794787,23794811,23794889,23795618,23795811,23795959,23796259,23796318,23797159,23797473,23798096,23798505,23798772,23801423,23801749,23801913,23801933,23801943,23802076,23802410,23802508,23802513,23802811,23802891,23803344,23803406,23803838,23804281,23804502,23804586,23804591,23805178,23805190,23805410,23806370,23806697,23807215,23807279,23807484,23808119,23808425,23808577,23809109,23809158,23809379,23809784,23810148,23810212,23810352,23810436,23811105,23811308,23811378,23811726,23811770,23811834,23811985,23812562,23812583,23812808,23812813,23813272,23813310,23813548,23814048,23814120,23814169,23814181,23814375,23814553,23815143,23815362,23815493,23815683,23816087,23816231,23816233,23816312,23816493,23816503,23816521,23816818,23816942,23817150,23817793,23817845,23817850,23817928,23818054,23818214,23818258,23818484,23818586,23818672,23818740,23818897,23818980,23819096,23819220,23819290,23819555,23819578,23819643,23819768,23819783,23819798,23819963,23820557,23820600,23820664,23820701,23820913,23821010,23821602,23821603,23821626,23821688,23821907,23821980,24500159,24500183,26980074,39320240,9441393,9445139,9449243,9453167,9453409,9459803,9460098,9463460,9466835,9469934,9471235,9471955,9473371,9473385,9473389,9479456,9487037,9489266,9489831,9489833","logged_in":true}});   yt.setConfig({
+    'GUIDED_HELP_LOCALE': "en_US",
+    'GUIDED_HELP_ENVIRONMENT': "prod"
+  });
+yt.setConfig('SPF_SEARCH_BOX', true);yt.setMsg({'ADDTO_CREATE_NEW_PLAYLIST': "Create new playlist\n",'ADDTO_CREATE_PLAYLIST_DYNAMIC_TITLE': "  $dynamic_title_placeholder (create new)\n",'ADDTO_WATCH_LATER': "Watch later",'ADDTO_WATCH_LATER_ADDED': "Added",'ADDTO_WATCH_LATER_ERROR': "Error",'ADDTO_WATCH_QUEUE': "Watch Queue",'ADDTO_WATCH_QUEUE_ADDED': "Added",'ADDTO_WATCH_QUEUE_ERROR': "Error",'ADDTO_TV_QUEUE': "Queue",'MASTHEAD_NOTIFICATIONS_LABEL': {"other": "# unread notifications.", "case0": "0 unread notifications.", "case1": "1 unread notification."},'MASTHEAD_NOTIFICATIONS_COUNT_99PLUS': "99+",'MDX_AUTOPLAY_OFF': 'Autoplay is off','MDX_AUTOPLAY_ON': 'Autoplay is on'});  yt.setConfig('FEED_PRIVACY_CSS_URL', "\/yts\/cssbin\/www-feedprivacydialog-webp-vflziQiH4.css");
+  yt.setConfig('FEED_PRIVACY_LIGHTBOX_ENABLED', true);
+yt.setConfig({'SBOX_JS_URL': "\/yts\/jsbin\/www-searchbox-vflyoAr_p\/www-searchbox.js",'SBOX_SETTINGS': {"HAS_ON_SCREEN_KEYBOARD":false,"PSUGGEST_TOKEN":"7YncxBu--UfIF81JdeNjoQ","PQ":"","REQUEST_LANGUAGE":"en","IS_FUSION":false,"REQUEST_DOMAIN":"ae","SUGG_EXP_ID":"","SESSION_INDEX":0},'SBOX_LABELS': {"SUGGESTION_DISMISSED_LABEL":"Suggestion removed","SUGGESTION_DISMISS_LABEL":"Remove"}});  yt.setConfig({
+    'YPC_LOADER_JS': "\/yts\/jsbin\/www-ypc-vflUyD5uc\/www-ypc.js",
+    'YPC_LOADER_CSS': "\/yts\/cssbin\/www-ypc-webp-vflEUQtA1.css",
+    'YPC_SIGNIN_URL': "https:\/\/accounts.google.com\/ServiceLogin?service=youtube\u0026continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Fnext%3D%252F%26hl%3Den%26authuser%3D0%26app%3Ddesktop%26action_handle_signin%3Dtrue\u0026uilel=3\u0026hl=en\u0026authuser=0\u0026passive=true",
+    'DBLCLK_ADVERTISER_ID': "2542116",
+    'DBLCLK_YPC_ACTIVITY_GROUP': "youtu444",
+    'SUBSCRIPTION_URL': "\/subscription_ajax",
+    'YPC_SWITCH_URL': "\/signin?next=%2F\u0026authuser=0\u0026feature=purchases\u0026skip_identity_prompt=True\u0026action_handle_signin=true",
+    'YPC_GB_LANGUAGE': "en_US",
+    'YPC_MB_URL': "https:\/\/payments.youtube.com\/payments\/v4\/js\/integrator.js?ss=md",
+    'YPC_TRANSACTION_URL': "\/transaction_handler",
+    'YPC_SUBSCRIPTION_URL': "\/ypc_subscription_ajax",
+    'YPC_POST_PURCHASE_URL': "\/ypc_post_purchase_ajax",
+    'YTR_FAMILY_CREATION_URL': "https:\/\/families.google.com\/webcreation?usegapi=1",
+    'YTO_GTM_DATA': {'event': 'purchased', 'purchaseStatus': 'success'},
+    'YTO_GTM_1_BUTTON_CLICK_DATA': {'event': 'landingButtonClick', 'buttonPosition': '1'},
+    'YTO_GTM_2_BUTTON_CLICK_DATA': {'event': 'landingButtonClick', 'buttonPosition': '2'}
+  });
+  yt.setMsg({
+    'YPC_OFFER_OVERLAY': "      \u003cdiv id=\"ypc-offer-overlay\" class=\"yt-uix-overlay\"\u003e\n      \u003cspan class=\"yt-uix-overlay-target\"\u003e\u003c\/span\u003e\n          \u003cdiv class=\"yt-dialog hid \"\u003e\n    \u003cdiv class=\"yt-dialog-base\"\u003e\n      \u003cspan class=\"yt-dialog-align\"\u003e\u003c\/span\u003e\n      \u003cdiv class=\"yt-dialog-fg\" role=\"dialog\"\u003e\n        \u003cdiv class=\"yt-dialog-fg-content\"\u003e\n          \u003cdiv class=\"yt-dialog-loading\"\u003e\n              \u003cdiv class=\"yt-dialog-waiting-content\"\u003e\n      \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"Loading icon\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\nLoading...\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n          \u003cdiv class=\"yt-dialog-content\"\u003e\n            \u003cdiv class= \"ypc-offer-overlay-container\"\u003e\u003ca href=\"#\" class=\"ypc-offer-overlay-close\" role=\"button\" tabindex=\"0\" aria-label=\"Close\"\u003e\u003c\/a\u003e\u003cdiv class=\"ypc-offer-overlay-content-wrapper clearfix\"\u003e\u003c\/div\u003e\u003cdiv class=\"ypc-offer-overlay-loading\"\u003e  \u003cspan title=\"Loading icon\" class=\"yt-material-spinner-img yt-sprite\"\u003e\u003c\/span\u003e\n\u003c\/div\u003e\u003cdiv class=\"ypc-offer-overlay-error\"\u003e\u003ch3\u003eError\u003c\/h3\u003e\u003cp class=\"ypc-offer-overlay-error-generic-content\"\u003eAn error occurred. Please try again later.\u003c\/p\u003e\u003cp class=\"ypc-offer-overlay-error-custom-content\"\u003e\u003c\/p\u003e\u003c\/div\u003e\u003cdiv class=\"ypc-offer-overlay-not-available-error\"\u003e\u003ch3 class=\"ypc-offer-overlay-not-available-title\"\u003ePurchases are not available\u003c\/h3\u003e\u003cp class=\"ypc-offer-overlay-not-available-content\"\u003e\u003c\/p\u003e  \u003cdiv class=\"ypc-offer-overlay-not-available-action yt-uix-overlay-actions\"\u003e\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-uix-overlay-close\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003eClose\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\u003c\/div\u003e\u003cdiv class=\"ypc-offer-overlay-tip-not-available-error\"\u003e\u003ch3 class=\"ypc-offer-overlay-not-available-title\"\u003eTipping is not available\u003c\/h3\u003e\u003cp class=\"ypc-offer-overlay-tip-not-available-content\"\u003e\u003c\/p\u003e  \u003cdiv class=\"ypc-offer-overlay-not-available-action yt-uix-overlay-actions\"\u003e\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-uix-overlay-close\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003eClose\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\u003c\/div\u003e\u003cdiv class=\"ypc-offer-plus-page-not-available-error\"\u003e\u003ch3 class=\"ypc-offer-overlay-not-available-title\"\u003ePurchases are not available\u003c\/h3\u003e\u003cp class=\"ypc-offer-plus-page-not-available-content\"\u003e\u003c\/p\u003e  \u003cdiv class=\"ypc-offer-overlay-not-available-action yt-uix-overlay-actions\"\u003e\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-uix-overlay-close\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003eClose\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\u003c\/div\u003e\u003c\/div\u003e\n          \u003c\/div\u003e\n          \u003cdiv class=\"yt-dialog-working\"\u003e\n              \u003cdiv class=\"yt-dialog-working-overlay\"\u003e\u003c\/div\u003e\n  \u003cdiv class=\"yt-dialog-working-bubble\"\u003e\n    \u003cdiv class=\"yt-dialog-waiting-content\"\u003e\n        \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"Loading icon\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\n        Working...\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n      \u003c\/div\u003e\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n        \u003c\/div\u003e\n        \u003cdiv class=\"yt-dialog-focus-trap\" tabindex=\"0\"\u003e\u003c\/div\u003e\n      \u003c\/div\u003e\n    \u003c\/div\u003e\n  \u003c\/div\u003e\n\n\n    \u003c\/div\u003e\n\n",
+    'YPC_UNSUBSCRIBE_OVERLAY': "      \u003cdiv id=\"ypc-unsubscribe-overlay\" class=\"yt-uix-overlay\" data-disable-shortcuts=\"true\"\u003e\n      \u003cspan class=\"yt-uix-overlay-target\"\u003e\u003c\/span\u003e\n          \u003cdiv class=\"yt-dialog hid \"\u003e\n    \u003cdiv class=\"yt-dialog-base\"\u003e\n      \u003cspan class=\"yt-dialog-align\"\u003e\u003c\/span\u003e\n      \u003cdiv class=\"yt-dialog-fg\" role=\"dialog\"\u003e\n        \u003cdiv class=\"yt-dialog-fg-content\"\u003e\n          \u003cdiv class=\"yt-dialog-loading\"\u003e\n              \u003cdiv class=\"yt-dialog-waiting-content\"\u003e\n      \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"Loading icon\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\nLoading...\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n          \u003cdiv class=\"yt-dialog-content\"\u003e\n              \u003cdiv class=\"ypc-unsubscribe-overlay\"\u003e\n      \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-confirm\"\u003e\nAre you sure you want to unsubscribe?\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-xauth\"\u003e\nUnable to unsubscribe\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-plus-page-error\"\u003e\nUnable to unsubscribe\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-loading\"\u003e\nLoading...\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-success unsubscribe-delayed ypc-unsubscribe-overlay-title-success\"\u003e\n    Subscription canceled\n\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-title unsubscribe-error\"\u003e\nPurchase not canceled\n  \u003c\/div\u003e\n\n    \u003cdiv class=\"ypc-unsubscribe-overlay-data\"\u003e\n        \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-confirm ypc-unsubscribe-overlay-confirm-content\"\u003e\n    \u003cdiv class=\"ypc-unsubscribe-overlay-content-message\"\u003e\n      Your subscription will be canceled when you unsubscribe. Your credit card will no longer be charged. You will still be able to access content until the billing cycle ends.\n\n    \u003c\/div\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-xauth\"\u003e\n    \u003cp\u003e\nYouTube Music Key is included free with your Google Play Music subscription. To cancel, please visit the \u003ca href=\"https:\/\/play.google.com\/music\/listen#\/settings\" target=\"_blank\"\u003eSettings\u003c\/a\u003e page in Google Play Music.\n    \u003c\/p\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-plus-page-error\"\u003e\n    \u003cp\u003e\nYou are currently logged in as a manager of Mainly Jaz, but you must be the owner to cancel the channel's subscriptions on YouTube.\n    \u003c\/p\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-loading\"\u003e\n      \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"Loading icon\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\n        Processing cancellation request...\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-success ypc-unsubscribe-overlay-content-success\"\u003e\n    \u003cp\u003eYou have successfully canceled future payments for this subscription.\n\u003c\/p\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-delayed\"\u003e\n    \u003cp\u003e\nYour subscription was canceled. The status displayed in your account will update soon.\n    \u003c\/p\u003e\n  \u003c\/div\u003e\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-content unsubscribe-error\"\u003e\n    \u003cp\u003e\nWe weren't able to cancel your order. Try again later, or contact \u003ca href=\"https:\/\/support.google.com\/youtube\/?p=commerce_contact\u0026amp;hl=en\" target=\"_blank\"\u003esupport\u003c\/a\u003e.\n    \u003c\/p\u003e\n  \u003c\/div\u003e\n\n          \u003cdiv class=\"ypc-unsubscribe-overlay-controls unsubscribe-confirm clearfix\"\u003e\n    \u003ca  href=\"\/\/support.google.com\/youtube\/?p=unsubscribe_help\u0026amp;hl=en\" class=\"yt-uix-button  ypc-unsubscribe-help yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default\" data-sessionlink=\"ei=_-cDXdqdKJq9igSQsan4Cg\" target=\"_blank\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003eHelp\u003c\/span\u003e\u003c\/a\u003e\n\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-overlay-close ypc-unsubscribe-keep\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003eKeep subscription\u003c\/span\u003e\u003c\/button\u003e\n\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary ypc-unsubscribe-confirm\" type=\"button\" onclick=\";return false;\" data-url=\"\/transaction_handler\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003eUnsubscribe\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\n\n  \u003cdiv class=\"ypc-unsubscribe-overlay-controls unsubscribe-success unsubscribe-xauth unsubscribe-plus-page-error unsubscribe-delayed unsubscribe-error\"\u003e\n    \u003cbutton class=\"yt-uix-button yt-uix-button-size-default yt-uix-button-primary yt-uix-overlay-close\" type=\"button\" onclick=\";return false;\"\u003e\u003cspan class=\"yt-uix-button-content\"\u003eClose\u003c\/span\u003e\u003c\/button\u003e\n  \u003c\/div\u003e\n\n    \u003c\/div\u003e\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n          \u003cdiv class=\"yt-dialog-working\"\u003e\n              \u003cdiv class=\"yt-dialog-working-overlay\"\u003e\u003c\/div\u003e\n  \u003cdiv class=\"yt-dialog-working-bubble\"\u003e\n    \u003cdiv class=\"yt-dialog-waiting-content\"\u003e\n        \u003cp class=\"yt-spinner \"\u003e\n        \u003cspan title=\"Loading icon\" class=\"yt-spinner-img  yt-sprite\"\u003e\u003c\/span\u003e\n\n    \u003cspan class=\"yt-spinner-message\"\u003e\n        Working...\n    \u003c\/span\u003e\n  \u003c\/p\u003e\n\n      \u003c\/div\u003e\n  \u003c\/div\u003e\n\n          \u003c\/div\u003e\n        \u003c\/div\u003e\n        \u003cdiv class=\"yt-dialog-focus-trap\" tabindex=\"0\"\u003e\u003c\/div\u003e\n      \u003c\/div\u003e\n    \u003c\/div\u003e\n  \u003c\/div\u003e\n\n\n    \u003c\/div\u003e\n\n"
+  });
+  yt.setConfig('GOOGLE_HELP_CONTEXT', "subscribers");
+    yt.setConfig('GOOGLE_HELP_PRODUCT_DATA', {"segment":6});
+ytcsi.info('st', 751);ytcfg.set({"CSI_SERVICE_NAME":"youtube","TIMING_INFO":{"yt_lt":"cold","cver":"1.20190613","c":"WEB","yt_li":1}});;ytcfg.set({"CSI_VIEWPORT":true,"TIMING_ACTION":""});;  yt.setConfig({
+      'XSRF_TOKEN': "QUFFLUhqazItdVk4WTRtRE1EM0dYamM2RDBhV2x0aEwyZ3xBQ3Jtc0trNnNodW5SRmc5aGQzbjM1N1UyaGp5eTZaVUlfT2xuUDI2dGZiLTZLMWxmazVjdWZSMmxCc1daNFRudmRRSUtFMVo0TzUwZFRpUHRsMzRhTXhsRnpFYmhGOUVjWnN3WGpWY2FvQWE1MFJqYkVKejVaaUh3OVVsbWhpXzI2NFZGMTdxQlpNc1dLZkpLQm5uZzBoYWExb01BTzdSNEE=",
+      'XSRF_FIELD_NAME': "session_token",
+
+      'XSRF_REDIRECT_TOKEN': "34zifbKvyDkLvEn5qHmViJEJUIJ8MTU2MDYyMzQ4OEAxNTYwNTM3MDg4"  });
+yt.setConfig('ID_TOKEN', "QUFFLUhqbHV3MXhpSDJyNVRqY0ZkQnlmcFdpYmEyUDBXQXw=");window.ytcfg.set('SERVICE_WORKER_KILLSWITCH', false);  yt.setConfig('THUMB_DELAY_LOAD_BUFFER', 0);
+if (window.ytcsi) {window.ytcsi.tick("jl", null, '');}</script>
+
+
+
+</body></html>

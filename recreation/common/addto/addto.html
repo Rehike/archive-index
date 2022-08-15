@@ -1,0 +1,77 @@
+<div class="addto-playlist-panel menu-panel active-panel">
+    <div class="addto-search-playlist-section" dir="ltr">
+        <span class="search-icon yt-sprite"></span>
+        <input title="Search playlists" aria-label="Search playlists" type="text" class="addto-search-box yt-uix-form-input-text">
+    </div>
+    <div class="playlists yt-uix-scroller" style="width:auto">
+        <ul class="addto-playlist-panel yt-uix-kbd-nav yt-uix-kbd-nav-list" role="menu" tabindex="0">
+            <li class="addto-playlist-item yt-uix-button-menu-item " data-full-list-id="PLhithere" data-item-name="hi there">
+                <button class="playlist-status" role="menuitemcheckbox" aria-checked="false"></button>
+                <span class="playlist-name">hi there</span>
+                <span class="public-icon yt-sprite"></span>
+            </li>
+            <li class="addto-playlist-item yt-uix-button-menu-item contains-some-selected-videos" data-full-list-id="PLwhatisthis" data-item-name="here is my playlists recreation">
+                <button class="playlist-status" role="menuitemcheckbox" aria-checked="true"></button>
+                <span class="playlist-name">here is my playlists recreation</span>
+                <span class="unlisted-icon yt-sprite"></span>
+            </li>
+            <li class="addto-playlist-item yt-uix-button-menu-item contains-all-selected-videos" data-full-list-id="PLaubreypRealNameLeak" data-item-name="aubrey pretty">
+                <button class="playlist-status" role="menuitemcheckbox" aria-checked="true"></button>
+                <span class="playlist-name">aubrey pretty</span>
+                <span class="private-icon yt-sprite"></span>
+            </li>
+            <li class="addto-playlist-item yt-uix-button-menu-item contains-all-selected-videos" data-full-list-id="PLthankyou" data-item-name="thank you for checking this out">
+                <button class="playlist-status" role="menuitemcheckbox" aria-checked="true"></button>
+                <span class="playlist-name">thank you for checking this out</span>
+                <span class="public-icon yt-sprite"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+<button class="create-playlist-item addto-menu-show-create-playlist-panel menu-panel active-panel">
+    Create new playlist
+</button>
+<div class="addto-create-playlist-section create-playlist-panel menu-panel">
+    <form class="create-playlist-widget-form yt-uix-focustrap" method="POST" action="/playlist_ajax?action_create_playlist=1" data-max-title-length="150">
+        <input class="video-ids-input" type="hidden" name="video_ids">
+        <input class="source-playlist-id-input" type="hidden" name="source_playlist_id">
+        <div class="">
+            <div class="yt-uix-form-label" style="margin-top:0">
+                <span class="title-input-container yt-uix-form-input-container yt-uix-form-input-text-container  yt-uix-form-input-fluid-container">
+                    <span class=" yt-uix-form-input-fluid">
+                        <input class="yt-uix-form-input-text title-input" name="n" type="text" maxlength="150">
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class=" clearfix">
+            <input class="privacy-value-input" type="hidden" name="p" value="public">
+            <div class="yt-uix-menu yt-uix-menu-sibling-content privacy-button-container">
+                <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-default yt-uix-button-has-icon no-icon-markup privacy-button yt-uix-menu-trigger" type="button" onclick=";return false;" aria-haspopup="true" role="button" aria-pressed="false" aria-label="Privacy" data-privacy-state="privacy-public"><span class="yt-uix-button-content">Public</span><span class="yt-uix-button-arrow yt-sprite"></span></button>
+                <div class="yt-uix-menu-content yt-ui-menu-content yt-uix-menu-content-hidden" role="menu">
+                    <ul class="create-playlist-widget-privacy-menu">
+                        <li role="menuitem">
+                            <button type="button" title="Public" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select yt-uix-button-has-icon no-icon-markup is-selected" data-value="public" data-privacy-state="privacy-public">
+                                <span class="yt-ui-menu-item-label">Public</span>
+                            </button>
+                        </li>
+                        <li role="menuitem">
+                            <button type="button" title="Unlisted" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select yt-uix-button-has-icon no-icon-markup" data-value="unlisted" data-privacy-state="privacy-unlisted">
+                                <span class="yt-ui-menu-item-label">Unlisted</span>
+                            </button>
+                        </li>
+                        <li role="menuitem">
+                            <button type="button" title="Private" class="yt-ui-menu-item has-icon yt-uix-menu-close-on-select yt-uix-button-has-icon no-icon-markup" data-value="private" data-privacy-state="privacy-private">
+                            <span class="yt-ui-menu-item-label">Private</span>
+                        </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="create-playlist-buttons">
+                <button class="yt-uix-button yt-uix-button-size-default yt-uix-button-primary create-button" type="submit" onclick=";return true;" disabled="True"><span class="yt-uix-button-content">Create</span></button>
+            </div>
+        </div>
+        <div class="yt-uix-focustrap-trap" tabindex="0"></div>
+    </form>
+</div>

@@ -28,7 +28,7 @@ Page | Logged in? | Type | Additional details | Year
 [Creator Studio: Your Contributions](https://web.archive.org/web/20181112150158id_/youtube.com/timedtext_cs_panel?o=U&ar=1) | Yes | Archive | No contributions placeholder | 2018
 [Settings: Notifications](https://web.archive.org/web/20170530024210id_/youtube.com/account_notifications) | Yes | Archive | | 2017
 [Settings: Playback and performance](https://web.archive.org/web/20181029084051id_/youtube.com/account_playback) | Yes | Archive | Hitchhiker material settings experiment | 2018
-[Owned playlist editor](/signed_in/2016-2020/playlists/playlist_editor_owner.html) | Yes | Archive | | 2018
+[Owned playlist editor](/signed_in/2016-2020/playlists/playlist_editor_owner.html) | Yes | Archive | | 2017
 [Owned channel: Feed tab](/signed_in/2013/channel/feed_owner.html) | Yes | Archive | | 2013
 [Owned channel: Home](/signed_in/2014/channel/home_owner.html) | Yes | Archive | | 2014
 [Owned channel: Home](/signed_in/2016-2020/channel/home_simple_owner.html) | Yes | Archive | Tabless channel design experiment | 2016

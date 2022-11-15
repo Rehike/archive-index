@@ -45,6 +45,7 @@ Page | Logged in? | Type | Additional details | Year
 [Age restricted watch page](/signed_out/2016-2020/watch/age_restricted.html) | No | Archive | | 2015
 [Watch page](https://web.archive.org/web/20170731073223id_/https://www.youtube.com/watch?v=jNQXAC9IVRw) | No | Archive | Material subscribe button experiment | 2017
 [Watch page](https://web.archive.org/web/20200314145346/https://www.youtube.com/watch?v=fHqjNHxmB7c) | No | Archive | Kids video (no add to, share) | 2020
+[Watch page](/signed_in/2020/watch/not_owner.html) | Yes | Archive | No share button, comments loaded, originally saved with Save Page As, CSS links corrected, but not JS | 2020
 [Subscriptions feed](https://web.archive.org/web/20190227224629id_/youtube.com/feed/subscriptions?disable_polymer=1) | Yes | Archive | List flow | 2019
 [Upload page](/signed_in/2016-2020/upload.html) | Yes | Archive | Has notifications and pickers loaded | 2018-2020 
 [Malformed Video Manager](https://web.archive.org/web/20080516065218/youtube.com/my_videos) | No? | Archive | Mangled masthead, no content | 2008

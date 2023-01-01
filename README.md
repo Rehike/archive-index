@@ -42,6 +42,7 @@ Page | Logged in? | Type | Additional details | Year
 [Live watch page](https://web.archive.org/web/20150910140705/https://www.youtube.com/watch?v=nx17nzI_lOk) | No | Archive | Legacy live chat loading placeholder | 2015
 [Live watch page](https://web.archive.org/web/20160921204227id_/https://www.youtube.com/live_chat?v=VqV0sn7WZcA&embed_domain=http://nickheaven.weebly.com/) | No | Archive | Chat unavailable | 2016
 [Live watch page](/signed_out/2016-2020/watch/live.html) | No | Archive | | 2019
+[Live chat panel](https://web.archive.org/web/20160916021846/https://www.youtube.com/live_chat?v=9QDOAIWdxQY&embed_domain=teamcoco.com) | No | Archive | Has templates included, chat messages may load on archive.org | 2016
 [Age restricted watch page](/signed_out/2016-2020/watch/age_restricted.html) | No | Archive | | 2015
 [Watch page](https://web.archive.org/web/20170731073223id_/https://www.youtube.com/watch?v=jNQXAC9IVRw) | No | Archive | Material subscribe button experiment | 2017
 [Watch page](https://web.archive.org/web/20200314145346/https://www.youtube.com/watch?v=fHqjNHxmB7c) | No | Archive | Kids video (no add to, share) | 2020
